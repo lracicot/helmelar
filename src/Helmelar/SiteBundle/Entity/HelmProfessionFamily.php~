@@ -1,0 +1,39 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmProfessionFamily
+ *
+ * @ORM\Table(name="HELM_PROFESSION_FAMILY")
+ * @ORM\Entity
+ */
+class HelmProfessionFamily
+{
+    /**
+     * @var integer $helmProfessionFamilyId
+     *
+     * @ORM\Column(name="HELM_PROFESSION_FAMILY_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmProfessionFamilyId;
+
+    /**
+     * @var string $helmProfessionFamilyName
+     *
+     * @ORM\Column(name="HELM_PROFESSION_FAMILY_NAME", type="string", length=20, nullable=false)
+     */
+    private $helmProfessionFamilyName;
+
+    /**
+     * @var string $helmProfessionFamilyDescription
+     *
+     * @ORM\Column(name="HELM_PROFESSION_FAMILY_DESCRIPTION", type="text", nullable=true)
+     */
+    private $helmProfessionFamilyDescription;
+
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="LogChar" table="LOG_CHAR">
+    <id name="logCharId" type="integer" column="LOG_CHAR_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="logCharDatetime" type="datetime" column="LOG_CHAR_DATETIME" nullable="false"/>
+    <field name="userId" type="integer" column="USER_ID" nullable="false"/>
+    <field name="charId" type="integer" column="CHAR_ID" nullable="false"/>
+    <field name="logCharField" type="string" column="LOG_CHAR_FIELD" length="255" nullable="false"/>
+    <field name="logCharOldValue" type="string" column="LOG_CHAR_OLD_VALUE" length="255" nullable="false"/>
+    <field name="logCharNewValue" type="string" column="LOG_CHAR_NEW_VALUE" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

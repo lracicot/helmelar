@@ -1,0 +1,67 @@
+Helmelar\SiteBundle\Entity\Quest:
+    type: entity
+    table: QUEST
+    fields:
+        questId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: QUEST_ID
+            generator:
+                strategy: IDENTITY
+        questRefId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: QUEST_REF_ID
+        questIdeaId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: QUEST_IDEA_ID
+        questTitle:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: QUEST_TITLE
+        questShortDescription:
+            type: text
+            nullable: false
+            column: QUEST_SHORT_DESCRIPTION
+        questDescription:
+            type: text
+            nullable: false
+            column: QUEST_DESCRIPTION
+        questIntro:
+            type: text
+            nullable: false
+            column: QUEST_INTRO
+        questGoal:
+            type: text
+            nullable: false
+            column: QUEST_GOAL
+        questTarget:
+            type: text
+            nullable: false
+            column: QUEST_TARGET
+        questLength:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: QUEST_LENGTH
+        questDate:
+            type: datetime
+            nullable: false
+            column: QUEST_DATE
+        organisatorId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: ORGANISATOR_ID
+        questNote:
+            type: text
+            nullable: false
+            column: QUEST_NOTE
+    lifecycleCallbacks: {  }

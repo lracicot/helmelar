@@ -1,0 +1,7 @@
+parameters:
+#    helmelar_admin.example.class: Helmelar\AdminBundle\Example
+
+services:
+#    helmelar_admin.example:
+#        class: %helmelar_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

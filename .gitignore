@@ -1,3 +1,6 @@
+#IDE
+*.kdev4
+
 # Bootstrap
 app/bootstrap*
 

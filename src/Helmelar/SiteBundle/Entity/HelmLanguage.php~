@@ -1,0 +1,46 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmLanguage
+ *
+ * @ORM\Table(name="HELM_LANGUAGE")
+ * @ORM\Entity
+ */
+class HelmLanguage
+{
+    /**
+     * @var integer $helmLanguageId
+     *
+     * @ORM\Column(name="HELM_LANGUAGE_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmLanguageId;
+
+    /**
+     * @var string $helmLanguageKey
+     *
+     * @ORM\Column(name="HELM_LANGUAGE_KEY", type="string", length=255, nullable=false)
+     */
+    private $helmLanguageKey;
+
+    /**
+     * @var string $helmLanguageWord
+     *
+     * @ORM\Column(name="HELM_LANGUAGE_WORD", type="string", length=255, nullable=false)
+     */
+    private $helmLanguageWord;
+
+    /**
+     * @var integer $helmRaceId
+     *
+     * @ORM\Column(name="HELM_RACE_ID", type="integer", nullable=false)
+     */
+    private $helmRaceId;
+
+
+}

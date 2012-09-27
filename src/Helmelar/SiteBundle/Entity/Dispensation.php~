@@ -1,0 +1,74 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Dispensation
+ *
+ * @ORM\Table(name="DISPENSATION")
+ * @ORM\Entity
+ */
+class Dispensation
+{
+    /**
+     * @var integer $dispensationId
+     *
+     * @ORM\Column(name="DISPENSATION_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $dispensationId;
+
+    /**
+     * @var integer $playerId
+     *
+     * @ORM\Column(name="PLAYER_ID", type="integer", nullable=false)
+     */
+    private $playerId;
+
+    /**
+     * @var string $dispensationPresentation
+     *
+     * @ORM\Column(name="DISPENSATION_PRESENTATION", type="text", nullable=false)
+     */
+    private $dispensationPresentation;
+
+    /**
+     * @var string $dispensationBg
+     *
+     * @ORM\Column(name="DISPENSATION_BG", type="text", nullable=false)
+     */
+    private $dispensationBg;
+
+    /**
+     * @var string $dispensationImage
+     *
+     * @ORM\Column(name="DISPENSATION_IMAGE", type="string", length=255, nullable=false)
+     */
+    private $dispensationImage;
+
+    /**
+     * @var \DateTime $dispensationDate
+     *
+     * @ORM\Column(name="DISPENSATION_DATE", type="datetime", nullable=false)
+     */
+    private $dispensationDate;
+
+    /**
+     * @var \DateTime $dispensationAprovalDate
+     *
+     * @ORM\Column(name="DISPENSATION_APROVAL_DATE", type="datetime", nullable=false)
+     */
+    private $dispensationAprovalDate;
+
+    /**
+     * @var integer $organisatorId
+     *
+     * @ORM\Column(name="ORGANISATOR_ID", type="integer", nullable=false)
+     */
+    private $organisatorId;
+
+
+}

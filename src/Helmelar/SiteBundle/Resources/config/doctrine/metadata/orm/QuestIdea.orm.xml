@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="QuestIdea" table="QUEST_IDEA">
+    <id name="questIdeaId" type="integer" column="QUEST_IDEA_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="questIdeaTitle" type="string" column="QUEST_IDEA_TITLE" length="255" nullable="false"/>
+    <field name="questIdeaDescription" type="text" column="QUEST_IDEA_DESCRIPTION" nullable="false"/>
+    <field name="userIdWriter" type="integer" column="USER_ID_WRITER" nullable="false"/>
+    <field name="questIdeaTarget" type="string" column="QUEST_IDEA_TARGET" length="255" nullable="false"/>
+    <field name="questIdeaStatus" type="integer" column="QUEST_IDEA_STATUS" nullable="false"/>
+  </entity>
+</doctrine-mapping>

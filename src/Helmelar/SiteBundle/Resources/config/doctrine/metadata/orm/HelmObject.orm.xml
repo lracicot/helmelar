@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmObject" table="HELM_OBJECT">
+    <id name="helmObjectId" type="integer" column="HELM_OBJECT_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmObjectName" type="string" column="HELM_OBJECT_NAME" length="200" nullable="false"/>
+    <field name="helmObjectNumber" type="integer" column="HELM_OBJECT_NUMBER" nullable="false"/>
+    <field name="helmObjectStatus" type="boolean" column="HELM_OBJECT_STATUS" nullable="false"/>
+    <field name="helmObjectType" type="boolean" column="HELM_OBJECT_TYPE" nullable="true"/>
+    <field name="helmObjectCatId" type="integer" column="HELM_OBJECT_CAT_ID" nullable="false"/>
+    <field name="helmObjectSubcatId" type="integer" column="HELM_OBJECT_SUBCAT_ID" nullable="false"/>
+    <field name="helmObjectIdLvl" type="boolean" column="HELM_OBJECT_ID_LVL" nullable="false"/>
+    <field name="helmObjectControlLvl" type="boolean" column="HELM_OBJECT_CONTROL_LVL" nullable="false"/>
+    <field name="helmObjectDescription" type="text" column="HELM_OBJECT_DESCRIPTION" nullable="true"/>
+    <field name="helmObjectDescriptionEffectControl" type="text" column="HELM_OBJECT_DESCRIPTION_EFFECT_CONTROL" nullable="false"/>
+    <field name="helmObjectDescriptionEffectNoControl" type="text" column="HELM_OBJECT_DESCRIPTION_EFFECT_NO_CONTROL" nullable="false"/>
+    <field name="helmObjectHistory" type="text" column="HELM_OBJECT_HISTORY" nullable="false"/>
+    <field name="helmObjectSpecial" type="text" column="HELM_OBJECT_SPECIAL" nullable="false"/>
+    <field name="charactId" type="integer" column="CHARACT_ID" nullable="false"/>
+    <field name="helmObjectNote" type="text" column="HELM_OBJECT_NOTE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

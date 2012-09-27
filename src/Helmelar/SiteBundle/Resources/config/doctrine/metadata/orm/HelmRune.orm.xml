@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmRune" table="HELM_RUNE">
+    <id name="helmRuneId" type="integer" column="HELM_RUNE_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmRuneName" type="string" column="HELM_RUNE_NAME" length="55" nullable="false"/>
+    <field name="helmRuneLvl" type="boolean" column="HELM_RUNE_LVL" nullable="false"/>
+    <field name="helmRunePower" type="text" column="HELM_RUNE_POWER" nullable="false"/>
+    <field name="helmRuneImage" type="string" column="HELM_RUNE_IMAGE" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

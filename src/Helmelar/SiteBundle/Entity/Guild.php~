@@ -1,0 +1,95 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Guild
+ *
+ * @ORM\Table(name="GUILD")
+ * @ORM\Entity
+ */
+class Guild
+{
+    /**
+     * @var integer $guildId
+     *
+     * @ORM\Column(name="GUILD_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $guildId;
+
+    /**
+     * @var string $guildName
+     *
+     * @ORM\Column(name="GUILD_NAME", type="string", length=255, nullable=false)
+     */
+    private $guildName;
+
+    /**
+     * @var boolean $guildStatus
+     *
+     * @ORM\Column(name="GUILD_STATUS", type="boolean", nullable=false)
+     */
+    private $guildStatus;
+
+    /**
+     * @var integer $helmGodId
+     *
+     * @ORM\Column(name="HELM_GOD_ID", type="integer", nullable=false)
+     */
+    private $helmGodId;
+
+    /**
+     * @var integer $helmCultId
+     *
+     * @ORM\Column(name="HELM_CULT_ID", type="integer", nullable=false)
+     */
+    private $helmCultId;
+
+    /**
+     * @var integer $helmAlignId
+     *
+     * @ORM\Column(name="HELM_ALIGN_ID", type="integer", nullable=false)
+     */
+    private $helmAlignId;
+
+    /**
+     * @var string $guildPrivBg
+     *
+     * @ORM\Column(name="GUILD_PRIV_BG", type="text", nullable=false)
+     */
+    private $guildPrivBg;
+
+    /**
+     * @var string $guildPubBg
+     *
+     * @ORM\Column(name="GUILD_PUB_BG", type="text", nullable=false)
+     */
+    private $guildPubBg;
+
+    /**
+     * @var string $guildGoal
+     *
+     * @ORM\Column(name="GUILD_GOAL", type="text", nullable=false)
+     */
+    private $guildGoal;
+
+    /**
+     * @var \DateTime $guildCreation
+     *
+     * @ORM\Column(name="GUILD_CREATION", type="datetime", nullable=false)
+     */
+    private $guildCreation;
+
+    /**
+     * @var string $guildNote
+     *
+     * @ORM\Column(name="GUILD_NOTE", type="text", nullable=false)
+     */
+    private $guildNote;
+
+
+}

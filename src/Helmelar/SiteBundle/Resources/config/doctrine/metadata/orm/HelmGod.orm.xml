@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmGod" table="HELM_GOD">
+    <id name="helmGodId" type="integer" column="HELM_GOD_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmGodType" type="boolean" column="HELM_GOD_TYPE" nullable="false"/>
+    <field name="helmGodName" type="string" column="HELM_GOD_NAME" length="20" nullable="false"/>
+    <field name="helmGodTitle" type="string" column="HELM_GOD_TITLE" length="255" nullable="false"/>
+    <field name="helmGodMotherId" type="integer" column="HELM_GOD_MOTHER_ID" nullable="false"/>
+    <field name="helmGodFatherId" type="integer" column="HELM_GOD_FATHER_ID" nullable="false"/>
+    <field name="helmGodEnnemyId" type="integer" column="HELM_GOD_ENNEMY_ID" nullable="false"/>
+    <field name="helmAlignId" type="integer" column="HELM_ALIGN_ID" nullable="false"/>
+    <field name="helmGodWeapon" type="string" column="HELM_GOD_WEAPON" length="255" nullable="false"/>
+    <field name="helmGodCharacteristic" type="text" column="HELM_GOD_CHARACTERISTIC" nullable="false"/>
+    <field name="helmGodShortDescription" type="text" column="HELM_GOD_SHORT_DESCRIPTION" nullable="true"/>
+    <field name="helmGodDescription" type="text" column="HELM_GOD_DESCRIPTION" nullable="false"/>
+    <field name="helmGodSymbol" type="text" column="HELM_GOD_SYMBOL" nullable="false"/>
+    <field name="helmGodSymbolImage" type="string" column="HELM_GOD_SYMBOL_IMAGE" length="255" nullable="false"/>
+    <field name="helmGodHistory" type="text" column="HELM_GOD_HISTORY" nullable="false"/>
+    <field name="helmGodMentality" type="text" column="HELM_GOD_MENTALITY" nullable="false"/>
+    <field name="helmGodCeremony" type="text" column="HELM_GOD_CEREMONY" nullable="false"/>
+    <field name="helmGodWedding" type="text" column="HELM_GOD_WEDDING" nullable="false"/>
+    <field name="helmGodImage" type="string" column="HELM_GOD_IMAGE" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

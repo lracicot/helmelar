@@ -1,0 +1,60 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\News
+ *
+ * @ORM\Table(name="NEWS")
+ * @ORM\Entity
+ */
+class News
+{
+    /**
+     * @var integer $newsId
+     *
+     * @ORM\Column(name="NEWS_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $newsId;
+
+    /**
+     * @var \DateTime $newsDate
+     *
+     * @ORM\Column(name="NEWS_DATE", type="date", nullable=false)
+     */
+    private $newsDate;
+
+    /**
+     * @var string $newsTitle
+     *
+     * @ORM\Column(name="NEWS_TITLE", type="string", length=50, nullable=false)
+     */
+    private $newsTitle;
+
+    /**
+     * @var string $newsText
+     *
+     * @ORM\Column(name="NEWS_TEXT", type="text", nullable=false)
+     */
+    private $newsText;
+
+    /**
+     * @var integer $userId
+     *
+     * @ORM\Column(name="USER_ID", type="integer", nullable=false)
+     */
+    private $userId;
+
+    /**
+     * @var integer $newsType
+     *
+     * @ORM\Column(name="NEWS_TYPE", type="integer", nullable=false)
+     */
+    private $newsType;
+
+
+}

@@ -1,0 +1,53 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Log
+ *
+ * @ORM\Table(name="LOG")
+ * @ORM\Entity
+ */
+class Log
+{
+    /**
+     * @var integer $logId
+     *
+     * @ORM\Column(name="LOG_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $logId;
+
+    /**
+     * @var string $logEmail
+     *
+     * @ORM\Column(name="LOG_EMAIL", type="string", length=255, nullable=false)
+     */
+    private $logEmail;
+
+    /**
+     * @var string $logPassword
+     *
+     * @ORM\Column(name="LOG_PASSWORD", type="string", length=255, nullable=false)
+     */
+    private $logPassword;
+
+    /**
+     * @var boolean $logStatus
+     *
+     * @ORM\Column(name="LOG_STATUS", type="boolean", nullable=false)
+     */
+    private $logStatus;
+
+    /**
+     * @var integer $userId
+     *
+     * @ORM\Column(name="USER_ID", type="integer", nullable=false)
+     */
+    private $userId;
+
+
+}

@@ -1,0 +1,46 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmKnowledgeExt
+ *
+ * @ORM\Table(name="HELM_KNOWLEDGE_EXT")
+ * @ORM\Entity
+ */
+class HelmKnowledgeExt
+{
+    /**
+     * @var integer $helmKnowledgeExtId
+     *
+     * @ORM\Column(name="HELM_KNOWLEDGE_EXT_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmKnowledgeExtId;
+
+    /**
+     * @var integer $helmKnowledgeId
+     *
+     * @ORM\Column(name="HELM_KNOWLEDGE_ID", type="integer", nullable=false)
+     */
+    private $helmKnowledgeId;
+
+    /**
+     * @var boolean $helmKnowledgeExtLvl
+     *
+     * @ORM\Column(name="HELM_KNOWLEDGE_EXT_LVL", type="boolean", nullable=false)
+     */
+    private $helmKnowledgeExtLvl;
+
+    /**
+     * @var string $helmKnowledgeExtDescription
+     *
+     * @ORM\Column(name="HELM_KNOWLEDGE_EXT_DESCRIPTION", type="text", nullable=false)
+     */
+    private $helmKnowledgeExtDescription;
+
+
+}

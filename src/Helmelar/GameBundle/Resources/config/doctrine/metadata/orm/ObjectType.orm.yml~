@@ -1,0 +1,18 @@
+HelmObjectType:
+    type: entity
+    table: HELM_OBJECT_TYPE
+    fields:
+        helmObjectTypeId:
+            id: true
+            type: boolean
+            nullable: false
+            column: HELM_OBJECT_TYPE_ID
+            generator:
+                strategy: IDENTITY
+        helmObjectTypeName:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: HELM_OBJECT_TYPE_NAME
+    lifecycleCallbacks: {  }

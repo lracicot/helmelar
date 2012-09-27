@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmRace" table="HELM_RACE">
+    <id name="helmRaceId" type="integer" column="HELM_RACE_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmRaceName" type="string" column="HELM_RACE_NAME" length="55" nullable="false"/>
+    <field name="helmRaceRegeneration" type="boolean" column="HELM_RACE_REGENERATION" nullable="false"/>
+    <field name="helmRaceDescription" type="text" column="HELM_RACE_DESCRIPTION" nullable="true"/>
+    <field name="helmRaceProfil" type="text" column="HELM_RACE_PROFIL" nullable="false"/>
+    <field name="helmRaceBonus" type="text" column="HELM_RACE_BONUS" nullable="true"/>
+    <field name="helmRaceMalus" type="text" column="HELM_RACE_MALUS" nullable="true"/>
+    <field name="helmRacePredilectionClass" type="text" column="HELM_RACE_PREDILECTION_CLASS" nullable="false"/>
+    <field name="helmRacePhysicalKnowledgeMax" type="boolean" column="HELM_RACE_PHYSICAL_KNOWLEDGE_MAX" nullable="false"/>
+    <field name="helmRaceMentalKnowledgeMax" type="boolean" column="HELM_RACE_MENTAL_KNOWLEDGE_MAX" nullable="false"/>
+    <field name="helmRaceMagicKnowledgeMax" type="boolean" column="HELM_RACE_MAGIC_KNOWLEDGE_MAX" nullable="false"/>
+    <field name="helmRaceForbiddenKnowledge" type="text" column="HELM_RACE_FORBIDDEN_KNOWLEDGE" nullable="false"/>
+    <field name="helmRaceRestriction" type="text" column="HELM_RACE_RESTRICTION" nullable="false"/>
+    <field name="helmRaceLanguage" type="integer" column="HELM_RACE_LANGUAGE" nullable="true"/>
+    <field name="helmRaceType" type="boolean" column="HELM_RACE_TYPE" nullable="true"/>
+    <field name="helmRaceBehavior" type="boolean" column="HELM_RACE_BEHAVIOR" nullable="false"/>
+    <field name="helmRaceOrder" type="boolean" column="HELM_RACE_ORDER" nullable="false"/>
+    <field name="helmRaceHistory" type="text" column="HELM_RACE_HISTORY" nullable="false"/>
+  </entity>
+</doctrine-mapping>

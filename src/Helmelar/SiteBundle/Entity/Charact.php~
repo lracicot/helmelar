@@ -1,0 +1,172 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Charact
+ *
+ * @ORM\Table(name="CHARACT")
+ * @ORM\Entity
+ */
+class Charact
+{
+    /**
+     * @var integer $charactId
+     *
+     * @ORM\Column(name="CHARACT_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $charactId;
+
+    /**
+     * @var integer $playerId
+     *
+     * @ORM\Column(name="PLAYER_ID", type="integer", nullable=false)
+     */
+    private $playerId;
+
+    /**
+     * @var string $charactName
+     *
+     * @ORM\Column(name="CHARACT_NAME", type="string", length=255, nullable=false)
+     */
+    private $charactName;
+
+    /**
+     * @var string $charactTitle
+     *
+     * @ORM\Column(name="CHARACT_TITLE", type="string", length=255, nullable=false)
+     */
+    private $charactTitle;
+
+    /**
+     * @var boolean $charactLevel
+     *
+     * @ORM\Column(name="CHARACT_LEVEL", type="boolean", nullable=false)
+     */
+    private $charactLevel;
+
+    /**
+     * @var boolean $charactPvTrunk
+     *
+     * @ORM\Column(name="CHARACT_PV_TRUNK", type="boolean", nullable=false)
+     */
+    private $charactPvTrunk;
+
+    /**
+     * @var boolean $charactPvArms
+     *
+     * @ORM\Column(name="CHARACT_PV_ARMS", type="boolean", nullable=false)
+     */
+    private $charactPvArms;
+
+    /**
+     * @var boolean $charactPvLegs
+     *
+     * @ORM\Column(name="CHARACT_PV_LEGS", type="boolean", nullable=false)
+     */
+    private $charactPvLegs;
+
+    /**
+     * @var boolean $charactFate
+     *
+     * @ORM\Column(name="CHARACT_FATE", type="boolean", nullable=false)
+     */
+    private $charactFate;
+
+    /**
+     * @var string $charactBonus
+     *
+     * @ORM\Column(name="CHARACT_BONUS", type="text", nullable=true)
+     */
+    private $charactBonus;
+
+    /**
+     * @var string $charactMalus
+     *
+     * @ORM\Column(name="CHARACT_MALUS", type="text", nullable=true)
+     */
+    private $charactMalus;
+
+    /**
+     * @var string $charactPrivBg
+     *
+     * @ORM\Column(name="CHARACT_PRIV_BG", type="text", nullable=true)
+     */
+    private $charactPrivBg;
+
+    /**
+     * @var string $charactPubBg
+     *
+     * @ORM\Column(name="CHARACT_PUB_BG", type="text", nullable=true)
+     */
+    private $charactPubBg;
+
+    /**
+     * @var string $charactGoal
+     *
+     * @ORM\Column(name="CHARACT_GOAL", type="text", nullable=true)
+     */
+    private $charactGoal;
+
+    /**
+     * @var integer $charactMoney
+     *
+     * @ORM\Column(name="CHARACT_MONEY", type="integer", nullable=true)
+     */
+    private $charactMoney;
+
+    /**
+     * @var integer $charactStone
+     *
+     * @ORM\Column(name="CHARACT_STONE", type="integer", nullable=true)
+     */
+    private $charactStone;
+
+    /**
+     * @var \DateTime $charactCreation
+     *
+     * @ORM\Column(name="CHARACT_CREATION", type="datetime", nullable=false)
+     */
+    private $charactCreation;
+
+    /**
+     * @var string $charactNotes
+     *
+     * @ORM\Column(name="CHARACT_NOTES", type="text", nullable=true)
+     */
+    private $charactNotes;
+
+    /**
+     * @var integer $alignId
+     *
+     * @ORM\Column(name="ALIGN_ID", type="integer", nullable=false)
+     */
+    private $alignId;
+
+    /**
+     * @var integer $cultId
+     *
+     * @ORM\Column(name="CULT_ID", type="integer", nullable=false)
+     */
+    private $cultId;
+
+    /**
+     * @var integer $raceId
+     *
+     * @ORM\Column(name="RACE_ID", type="integer", nullable=false)
+     */
+    private $raceId;
+
+    /**
+     * @var integer $godId
+     *
+     * @ORM\Column(name="GOD_ID", type="integer", nullable=false)
+     */
+    private $godId;
+
+
+}

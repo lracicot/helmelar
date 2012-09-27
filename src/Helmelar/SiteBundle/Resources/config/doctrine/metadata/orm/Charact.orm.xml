@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Charact" table="CHARACT">
+    <id name="charactId" type="integer" column="CHARACT_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="playerId" type="integer" column="PLAYER_ID" nullable="false"/>
+    <field name="charactName" type="string" column="CHARACT_NAME" length="255" nullable="false"/>
+    <field name="charactTitle" type="string" column="CHARACT_TITLE" length="255" nullable="false"/>
+    <field name="charactLevel" type="boolean" column="CHARACT_LEVEL" nullable="false"/>
+    <field name="charactPvTrunk" type="boolean" column="CHARACT_PV_TRUNK" nullable="false"/>
+    <field name="charactPvArms" type="boolean" column="CHARACT_PV_ARMS" nullable="false"/>
+    <field name="charactPvLegs" type="boolean" column="CHARACT_PV_LEGS" nullable="false"/>
+    <field name="charactFate" type="boolean" column="CHARACT_FATE" nullable="false"/>
+    <field name="charactBonus" type="text" column="CHARACT_BONUS" nullable="true"/>
+    <field name="charactMalus" type="text" column="CHARACT_MALUS" nullable="true"/>
+    <field name="charactPrivBg" type="text" column="CHARACT_PRIV_BG" nullable="true"/>
+    <field name="charactPubBg" type="text" column="CHARACT_PUB_BG" nullable="true"/>
+    <field name="charactGoal" type="text" column="CHARACT_GOAL" nullable="true"/>
+    <field name="charactMoney" type="integer" column="CHARACT_MONEY" nullable="true"/>
+    <field name="charactStone" type="integer" column="CHARACT_STONE" nullable="true"/>
+    <field name="charactCreation" type="datetime" column="CHARACT_CREATION" nullable="false"/>
+    <field name="charactNotes" type="text" column="CHARACT_NOTES" nullable="true"/>
+    <field name="alignId" type="integer" column="ALIGN_ID" nullable="false"/>
+    <field name="cultId" type="integer" column="CULT_ID" nullable="false"/>
+    <field name="raceId" type="integer" column="RACE_ID" nullable="false"/>
+    <field name="godId" type="integer" column="GOD_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Message" table="MESSAGE">
+    <id name="messageId" type="integer" column="MESSAGE_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="messageRefId" type="integer" column="MESSAGE_REF_ID" nullable="false"/>
+    <field name="messageTitle" type="string" column="MESSAGE_TITLE" length="255" nullable="false"/>
+    <field name="messageText" type="text" column="MESSAGE_TEXT" nullable="false"/>
+    <field name="messageFromUserId" type="integer" column="MESSAGE_FROM_USER_ID" nullable="false"/>
+    <field name="messageToUserId" type="integer" column="MESSAGE_TO_USER_ID" nullable="false"/>
+    <field name="messageDate" type="datetime" column="MESSAGE_DATE" nullable="false"/>
+    <field name="messageDateRead" type="datetime" column="MESSAGE_DATE_READ" nullable="false"/>
+    <field name="messageSenderStatus" type="integer" column="MESSAGE_SENDER_STATUS" nullable="false"/>
+    <field name="messageReciverStatus" type="integer" column="MESSAGE_RECIVER_STATUS" nullable="false"/>
+    <field name="messageType" type="integer" column="MESSAGE_TYPE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

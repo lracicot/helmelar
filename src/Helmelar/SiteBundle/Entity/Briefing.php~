@@ -1,0 +1,53 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Briefing
+ *
+ * @ORM\Table(name="BRIEFING")
+ * @ORM\Entity
+ */
+class Briefing
+{
+    /**
+     * @var integer $briefingId
+     *
+     * @ORM\Column(name="BRIEFING_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $briefingId;
+
+    /**
+     * @var integer $scenarioId
+     *
+     * @ORM\Column(name="SCENARIO_ID", type="integer", nullable=false)
+     */
+    private $scenarioId;
+
+    /**
+     * @var boolean $briefingType
+     *
+     * @ORM\Column(name="BRIEFING_TYPE", type="boolean", nullable=false)
+     */
+    private $briefingType;
+
+    /**
+     * @var string $briefingText
+     *
+     * @ORM\Column(name="BRIEFING_TEXT", type="text", nullable=false)
+     */
+    private $briefingText;
+
+    /**
+     * @var integer $organisatorId
+     *
+     * @ORM\Column(name="ORGANISATOR_ID", type="integer", nullable=false)
+     */
+    private $organisatorId;
+
+
+}

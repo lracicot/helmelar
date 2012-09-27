@@ -1,0 +1,130 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmObject
+ *
+ * @ORM\Table(name="HELM_OBJECT")
+ * @ORM\Entity
+ */
+class HelmObject
+{
+    /**
+     * @var integer $helmObjectId
+     *
+     * @ORM\Column(name="HELM_OBJECT_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmObjectId;
+
+    /**
+     * @var string $helmObjectName
+     *
+     * @ORM\Column(name="HELM_OBJECT_NAME", type="string", length=200, nullable=false)
+     */
+    private $helmObjectName;
+
+    /**
+     * @var integer $helmObjectNumber
+     *
+     * @ORM\Column(name="HELM_OBJECT_NUMBER", type="integer", nullable=false)
+     */
+    private $helmObjectNumber;
+
+    /**
+     * @var boolean $helmObjectStatus
+     *
+     * @ORM\Column(name="HELM_OBJECT_STATUS", type="boolean", nullable=false)
+     */
+    private $helmObjectStatus;
+
+    /**
+     * @var boolean $helmObjectType
+     *
+     * @ORM\Column(name="HELM_OBJECT_TYPE", type="boolean", nullable=true)
+     */
+    private $helmObjectType;
+
+    /**
+     * @var integer $helmObjectCatId
+     *
+     * @ORM\Column(name="HELM_OBJECT_CAT_ID", type="integer", nullable=false)
+     */
+    private $helmObjectCatId;
+
+    /**
+     * @var integer $helmObjectSubcatId
+     *
+     * @ORM\Column(name="HELM_OBJECT_SUBCAT_ID", type="integer", nullable=false)
+     */
+    private $helmObjectSubcatId;
+
+    /**
+     * @var boolean $helmObjectIdLvl
+     *
+     * @ORM\Column(name="HELM_OBJECT_ID_LVL", type="boolean", nullable=false)
+     */
+    private $helmObjectIdLvl;
+
+    /**
+     * @var boolean $helmObjectControlLvl
+     *
+     * @ORM\Column(name="HELM_OBJECT_CONTROL_LVL", type="boolean", nullable=false)
+     */
+    private $helmObjectControlLvl;
+
+    /**
+     * @var string $helmObjectDescription
+     *
+     * @ORM\Column(name="HELM_OBJECT_DESCRIPTION", type="text", nullable=true)
+     */
+    private $helmObjectDescription;
+
+    /**
+     * @var string $helmObjectDescriptionEffectControl
+     *
+     * @ORM\Column(name="HELM_OBJECT_DESCRIPTION_EFFECT_CONTROL", type="text", nullable=false)
+     */
+    private $helmObjectDescriptionEffectControl;
+
+    /**
+     * @var string $helmObjectDescriptionEffectNoControl
+     *
+     * @ORM\Column(name="HELM_OBJECT_DESCRIPTION_EFFECT_NO_CONTROL", type="text", nullable=false)
+     */
+    private $helmObjectDescriptionEffectNoControl;
+
+    /**
+     * @var string $helmObjectHistory
+     *
+     * @ORM\Column(name="HELM_OBJECT_HISTORY", type="text", nullable=false)
+     */
+    private $helmObjectHistory;
+
+    /**
+     * @var string $helmObjectSpecial
+     *
+     * @ORM\Column(name="HELM_OBJECT_SPECIAL", type="text", nullable=false)
+     */
+    private $helmObjectSpecial;
+
+    /**
+     * @var integer $charactId
+     *
+     * @ORM\Column(name="CHARACT_ID", type="integer", nullable=false)
+     */
+    private $charactId;
+
+    /**
+     * @var string $helmObjectNote
+     *
+     * @ORM\Column(name="HELM_OBJECT_NOTE", type="text", nullable=false)
+     */
+    private $helmObjectNote;
+
+
+}

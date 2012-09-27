@@ -1,0 +1,67 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\User
+ *
+ * @ORM\Table(name="USER")
+ * @ORM\Entity
+ */
+class User
+{
+    /**
+     * @var integer $userId
+     *
+     * @ORM\Column(name="USER_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $userId;
+
+    /**
+     * @var string $userFirstName
+     *
+     * @ORM\Column(name="USER_FIRST_NAME", type="string", length=255, nullable=false)
+     */
+    private $userFirstName;
+
+    /**
+     * @var string $userLastName
+     *
+     * @ORM\Column(name="USER_LAST_NAME", type="string", length=255, nullable=false)
+     */
+    private $userLastName;
+
+    /**
+     * @var string $userType
+     *
+     * @ORM\Column(name="USER_TYPE", type="string", length=255, nullable=false)
+     */
+    private $userType;
+
+    /**
+     * @var boolean $userStatus
+     *
+     * @ORM\Column(name="USER_STATUS", type="boolean", nullable=false)
+     */
+    private $userStatus;
+
+    /**
+     * @var string $userNote
+     *
+     * @ORM\Column(name="USER_NOTE", type="text", nullable=true)
+     */
+    private $userNote;
+
+    /**
+     * @var string $userToken
+     *
+     * @ORM\Column(name="USER_TOKEN", type="string", length=255, nullable=false)
+     */
+    private $userToken;
+
+
+}

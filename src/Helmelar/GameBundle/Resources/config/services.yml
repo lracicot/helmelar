@@ -1,0 +1,7 @@
+parameters:
+#    helmelar_game.example.class: Helmelar\GameBundle\Example
+
+services:
+#    helmelar_game.example:
+#        class: %helmelar_game.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

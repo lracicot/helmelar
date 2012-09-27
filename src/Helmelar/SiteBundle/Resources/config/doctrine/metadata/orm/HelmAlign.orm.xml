@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmAlign" table="HELM_ALIGN">
+    <id name="helmAlignId" type="integer" column="HELM_ALIGN_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmAlignName" type="string" column="HELM_ALIGN_NAME" length="20" nullable="false"/>
+    <field name="helmBehaviorId" type="boolean" column="HELM_BEHAVIOR_ID" nullable="false"/>
+    <field name="helmAlignDescription" type="text" column="HELM_ALIGN_DESCRIPTION" nullable="true"/>
+    <field name="helmAlignOrder" type="boolean" column="HELM_ALIGN_ORDER" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,23 @@
+Helmelar\GameBundle\Entity\HelmKnowledge:
+    type: entity
+    table: HELM_KNOWLEDGE
+    fields:
+        helmKnowledgeId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_KNOWLEDGE_ID
+            generator:
+                strategy: IDENTITY
+        helmKnowledgeName:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: HELM_KNOWLEDGE_NAME
+        helmKnowledgeType:
+            type: boolean
+            nullable: false
+            column: HELM_KNOWLEDGE_TYPE
+    lifecycleCallbacks: {  }

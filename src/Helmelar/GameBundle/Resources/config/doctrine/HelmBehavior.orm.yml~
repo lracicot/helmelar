@@ -1,0 +1,18 @@
+Helmelar\SiteBundle\Entity\HelmBehavior:
+    type: entity
+    table: HELM_BEHAVIOR
+    fields:
+        helmBehaviorId:
+            id: true
+            type: boolean
+            nullable: false
+            column: HELM_BEHAVIOR_ID
+            generator:
+                strategy: IDENTITY
+        helmBehaviorName:
+            type: string
+            length: 55
+            fixed: false
+            nullable: false
+            column: HELM_BEHAVIOR_NAME
+    lifecycleCallbacks: {  }

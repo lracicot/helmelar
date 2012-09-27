@@ -1,0 +1,33 @@
+Helmelar\GameBundle\Entity\HelmRune:
+    type: entity
+    table: HELM_RUNE
+    fields:
+        helmRuneId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_RUNE_ID
+            generator:
+                strategy: IDENTITY
+        helmRuneName:
+            type: string
+            length: 55
+            fixed: false
+            nullable: false
+            column: HELM_RUNE_NAME
+        helmRuneLvl:
+            type: boolean
+            nullable: false
+            column: HELM_RUNE_LVL
+        helmRunePower:
+            type: text
+            nullable: false
+            column: HELM_RUNE_POWER
+        helmRuneImage:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: HELM_RUNE_IMAGE
+    lifecycleCallbacks: {  }

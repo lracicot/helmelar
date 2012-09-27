@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelCharactSpell" table="REL_CHARACT_SPELL">
+    <id name="relCharactSpellId" type="integer" column="REL_CHARACT_SPELL_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="charactId" type="integer" column="CHARACT_ID" nullable="false"/>
+    <field name="helmSpellId" type="integer" column="HELM_SPELL_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

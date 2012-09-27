@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelQuestCharact" table="REL_QUEST_CHARACT">
+    <id name="relQuestCharactId" type="integer" column="REL_QUEST_CHARACT_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="relQuestCharactType" type="boolean" column="REL_QUEST_CHARACT_TYPE" nullable="false"/>
+    <field name="questId" type="integer" column="QUEST_ID" nullable="false"/>
+    <field name="charactId" type="integer" column="CHARACT_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

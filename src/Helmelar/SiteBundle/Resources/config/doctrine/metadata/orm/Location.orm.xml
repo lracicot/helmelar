@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Location" table="LOCATION">
+    <id name="locationId" type="integer" column="LOCATION_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="locationAddress" type="integer" column="LOCATION_ADDRESS" nullable="true"/>
+    <field name="locationSuite" type="string" column="LOCATION_SUITE" length="255" nullable="false"/>
+    <field name="locationRoad" type="string" column="LOCATION_ROAD" length="255" nullable="true"/>
+    <field name="locationCity" type="string" column="LOCATION_CITY" length="255" nullable="false"/>
+    <field name="locationState" type="string" column="LOCATION_STATE" length="255" nullable="false"/>
+    <field name="locationCountry" type="string" column="LOCATION_COUNTRY" length="255" nullable="false"/>
+    <field name="locationPostalCode" type="string" column="LOCATION_POSTAL_CODE" length="255" nullable="true"/>
+    <field name="locationTimeZone" type="string" column="LOCATION_TIME_ZONE" length="255" nullable="false"/>
+    <field name="locationNote" type="text" column="LOCATION_NOTE" nullable="true"/>
+  </entity>
+</doctrine-mapping>

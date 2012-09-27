@@ -1,0 +1,26 @@
+Helmelar\SiteBundle\Entity\HelmKnowledgeExt:
+    type: entity
+    table: HELM_KNOWLEDGE_EXT
+    fields:
+        helmKnowledgeExtId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_KNOWLEDGE_EXT_ID
+            generator:
+                strategy: IDENTITY
+        helmKnowledgeId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_KNOWLEDGE_ID
+        helmKnowledgeExtLvl:
+            type: boolean
+            nullable: false
+            column: HELM_KNOWLEDGE_EXT_LVL
+        helmKnowledgeExtDescription:
+            type: text
+            nullable: false
+            column: HELM_KNOWLEDGE_EXT_DESCRIPTION
+    lifecycleCallbacks: {  }

@@ -1,0 +1,165 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmSpell
+ *
+ * @ORM\Table(name="HELM_SPELL")
+ * @ORM\Entity
+ */
+class HelmSpell
+{
+    /**
+     * @var integer $helmSpellId
+     *
+     * @ORM\Column(name="HELM_SPELL_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmSpellId;
+
+    /**
+     * @var boolean $helmSpellType
+     *
+     * @ORM\Column(name="HELM_SPELL_TYPE", type="boolean", nullable=false)
+     */
+    private $helmSpellType;
+
+    /**
+     * @var boolean $helmSpellLvl
+     *
+     * @ORM\Column(name="HELM_SPELL_LVL", type="boolean", nullable=false)
+     */
+    private $helmSpellLvl;
+
+    /**
+     * @var boolean $helmSpellPlan
+     *
+     * @ORM\Column(name="HELM_SPELL_PLAN", type="boolean", nullable=false)
+     */
+    private $helmSpellPlan;
+
+    /**
+     * @var integer $helmSpellGodId
+     *
+     * @ORM\Column(name="HELM_SPELL_GOD_ID", type="integer", nullable=false)
+     */
+    private $helmSpellGodId;
+
+    /**
+     * @var integer $helmSpellRaceId
+     *
+     * @ORM\Column(name="HELM_SPELL_RACE_ID", type="integer", nullable=false)
+     */
+    private $helmSpellRaceId;
+
+    /**
+     * @var string $helmSpellName
+     *
+     * @ORM\Column(name="HELM_SPELL_NAME", type="string", length=255, nullable=false)
+     */
+    private $helmSpellName;
+
+    /**
+     * @var integer $helmSpellRuneId
+     *
+     * @ORM\Column(name="HELM_SPELL_RUNE_ID", type="integer", nullable=false)
+     */
+    private $helmSpellRuneId;
+
+    /**
+     * @var string $helmSpellCast
+     *
+     * @ORM\Column(name="HELM_SPELL_CAST", type="text", nullable=false)
+     */
+    private $helmSpellCast;
+
+    /**
+     * @var string $helmSpellFinalWords
+     *
+     * @ORM\Column(name="HELM_SPELL_FINAL_WORDS", type="text", nullable=false)
+     */
+    private $helmSpellFinalWords;
+
+    /**
+     * @var string $helmSpellEffect
+     *
+     * @ORM\Column(name="HELM_SPELL_EFFECT", type="text", nullable=false)
+     */
+    private $helmSpellEffect;
+
+    /**
+     * @var string $helmSpellDuration
+     *
+     * @ORM\Column(name="HELM_SPELL_DURATION", type="string", length=255, nullable=false)
+     */
+    private $helmSpellDuration;
+
+    /**
+     * @var string $helmSpellSpecialDuration
+     *
+     * @ORM\Column(name="HELM_SPELL_SPECIAL_DURATION", type="string", length=70, nullable=false)
+     */
+    private $helmSpellSpecialDuration;
+
+    /**
+     * @var string $helmSpellReagent
+     *
+     * @ORM\Column(name="HELM_SPELL_REAGENT", type="text", nullable=false)
+     */
+    private $helmSpellReagent;
+
+    /**
+     * @var string $helmSpellRestriction
+     *
+     * @ORM\Column(name="HELM_SPELL_RESTRICTION", type="text", nullable=false)
+     */
+    private $helmSpellRestriction;
+
+    /**
+     * @var string $helmSpellSpecial
+     *
+     * @ORM\Column(name="HELM_SPELL_SPECIAL", type="text", nullable=false)
+     */
+    private $helmSpellSpecial;
+
+    /**
+     * @var string $helmSpellHistory
+     *
+     * @ORM\Column(name="HELM_SPELL_HISTORY", type="text", nullable=false)
+     */
+    private $helmSpellHistory;
+
+    /**
+     * @var integer $helmSpellCreatorId
+     *
+     * @ORM\Column(name="HELM_SPELL_CREATOR_ID", type="integer", nullable=false)
+     */
+    private $helmSpellCreatorId;
+
+    /**
+     * @var \DateTime $helmSpellDate
+     *
+     * @ORM\Column(name="HELM_SPELL_DATE", type="datetime", nullable=false)
+     */
+    private $helmSpellDate;
+
+    /**
+     * @var \DateTime $helmSpellDateRev
+     *
+     * @ORM\Column(name="HELM_SPELL_DATE_REV", type="datetime", nullable=false)
+     */
+    private $helmSpellDateRev;
+
+    /**
+     * @var string $helmSpellNote
+     *
+     * @ORM\Column(name="HELM_SPELL_NOTE", type="text", nullable=false)
+     */
+    private $helmSpellNote;
+
+
+}

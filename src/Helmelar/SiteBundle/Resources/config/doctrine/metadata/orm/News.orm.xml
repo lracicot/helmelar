@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="News" table="NEWS">
+    <id name="newsId" type="integer" column="NEWS_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="newsDate" type="date" column="NEWS_DATE" nullable="false"/>
+    <field name="newsTitle" type="string" column="NEWS_TITLE" length="50" nullable="false"/>
+    <field name="newsText" type="text" column="NEWS_TEXT" nullable="false"/>
+    <field name="userId" type="integer" column="USER_ID" nullable="false"/>
+    <field name="newsType" type="integer" column="NEWS_TYPE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

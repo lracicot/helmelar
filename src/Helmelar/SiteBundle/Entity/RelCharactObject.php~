@@ -1,0 +1,39 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\RelCharactObject
+ *
+ * @ORM\Table(name="REL_CHARACT_OBJECT")
+ * @ORM\Entity
+ */
+class RelCharactObject
+{
+    /**
+     * @var integer $relCharactObject
+     *
+     * @ORM\Column(name="REL_CHARACT_OBJECT", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $relCharactObject;
+
+    /**
+     * @var integer $	HelmObjectId
+     *
+     * @ORM\Column(name="  	HELM_OBJECT_ID", type="integer", nullable=false)
+     */
+    private $	HelmObjectId;
+
+    /**
+     * @var integer $charactId
+     *
+     * @ORM\Column(name="CHARACT_ID", type="integer", nullable=false)
+     */
+    private $charactId;
+
+
+}

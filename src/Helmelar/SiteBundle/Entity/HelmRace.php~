@@ -1,0 +1,144 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmRace
+ *
+ * @ORM\Table(name="HELM_RACE")
+ * @ORM\Entity
+ */
+class HelmRace
+{
+    /**
+     * @var integer $helmRaceId
+     *
+     * @ORM\Column(name="HELM_RACE_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmRaceId;
+
+    /**
+     * @var string $helmRaceName
+     *
+     * @ORM\Column(name="HELM_RACE_NAME", type="string", length=55, nullable=false)
+     */
+    private $helmRaceName;
+
+    /**
+     * @var boolean $helmRaceRegeneration
+     *
+     * @ORM\Column(name="HELM_RACE_REGENERATION", type="boolean", nullable=false)
+     */
+    private $helmRaceRegeneration;
+
+    /**
+     * @var string $helmRaceDescription
+     *
+     * @ORM\Column(name="HELM_RACE_DESCRIPTION", type="text", nullable=true)
+     */
+    private $helmRaceDescription;
+
+    /**
+     * @var string $helmRaceProfil
+     *
+     * @ORM\Column(name="HELM_RACE_PROFIL", type="text", nullable=false)
+     */
+    private $helmRaceProfil;
+
+    /**
+     * @var string $helmRaceBonus
+     *
+     * @ORM\Column(name="HELM_RACE_BONUS", type="text", nullable=true)
+     */
+    private $helmRaceBonus;
+
+    /**
+     * @var string $helmRaceMalus
+     *
+     * @ORM\Column(name="HELM_RACE_MALUS", type="text", nullable=true)
+     */
+    private $helmRaceMalus;
+
+    /**
+     * @var string $helmRacePredilectionClass
+     *
+     * @ORM\Column(name="HELM_RACE_PREDILECTION_CLASS", type="text", nullable=false)
+     */
+    private $helmRacePredilectionClass;
+
+    /**
+     * @var boolean $helmRacePhysicalKnowledgeMax
+     *
+     * @ORM\Column(name="HELM_RACE_PHYSICAL_KNOWLEDGE_MAX", type="boolean", nullable=false)
+     */
+    private $helmRacePhysicalKnowledgeMax;
+
+    /**
+     * @var boolean $helmRaceMentalKnowledgeMax
+     *
+     * @ORM\Column(name="HELM_RACE_MENTAL_KNOWLEDGE_MAX", type="boolean", nullable=false)
+     */
+    private $helmRaceMentalKnowledgeMax;
+
+    /**
+     * @var boolean $helmRaceMagicKnowledgeMax
+     *
+     * @ORM\Column(name="HELM_RACE_MAGIC_KNOWLEDGE_MAX", type="boolean", nullable=false)
+     */
+    private $helmRaceMagicKnowledgeMax;
+
+    /**
+     * @var string $helmRaceForbiddenKnowledge
+     *
+     * @ORM\Column(name="HELM_RACE_FORBIDDEN_KNOWLEDGE", type="text", nullable=false)
+     */
+    private $helmRaceForbiddenKnowledge;
+
+    /**
+     * @var string $helmRaceRestriction
+     *
+     * @ORM\Column(name="HELM_RACE_RESTRICTION", type="text", nullable=false)
+     */
+    private $helmRaceRestriction;
+
+    /**
+     * @var integer $helmRaceLanguage
+     *
+     * @ORM\Column(name="HELM_RACE_LANGUAGE", type="integer", nullable=true)
+     */
+    private $helmRaceLanguage;
+
+    /**
+     * @var boolean $helmRaceType
+     *
+     * @ORM\Column(name="HELM_RACE_TYPE", type="boolean", nullable=true)
+     */
+    private $helmRaceType;
+
+    /**
+     * @var boolean $helmRaceBehavior
+     *
+     * @ORM\Column(name="HELM_RACE_BEHAVIOR", type="boolean", nullable=false)
+     */
+    private $helmRaceBehavior;
+
+    /**
+     * @var boolean $helmRaceOrder
+     *
+     * @ORM\Column(name="HELM_RACE_ORDER", type="boolean", nullable=false)
+     */
+    private $helmRaceOrder;
+
+    /**
+     * @var string $helmRaceHistory
+     *
+     * @ORM\Column(name="HELM_RACE_HISTORY", type="text", nullable=false)
+     */
+    private $helmRaceHistory;
+
+
+}

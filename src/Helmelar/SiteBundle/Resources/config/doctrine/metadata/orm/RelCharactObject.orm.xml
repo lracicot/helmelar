@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelCharactObject" table="REL_CHARACT_OBJECT">
+    <id name="relCharactObject" type="integer" column="REL_CHARACT_OBJECT">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="&#9;HelmObjectId" type="integer" column="  &#9;HELM_OBJECT_ID" nullable="false"/>
+    <field name="charactId" type="integer" column="CHARACT_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,58 @@
+Helmelar\SiteBundle\Entity\Guild:
+    type: entity
+    table: GUILD
+    fields:
+        guildId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: GUILD_ID
+            generator:
+                strategy: IDENTITY
+        guildName:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: GUILD_NAME
+        guildStatus:
+            type: boolean
+            nullable: false
+            column: GUILD_STATUS
+        helmGodId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_GOD_ID
+        helmCultId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_CULT_ID
+        helmAlignId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_ALIGN_ID
+        guildPrivBg:
+            type: text
+            nullable: false
+            column: GUILD_PRIV_BG
+        guildPubBg:
+            type: text
+            nullable: false
+            column: GUILD_PUB_BG
+        guildGoal:
+            type: text
+            nullable: false
+            column: GUILD_GOAL
+        guildCreation:
+            type: datetime
+            nullable: false
+            column: GUILD_CREATION
+        guildNote:
+            type: text
+            nullable: false
+            column: GUILD_NOTE
+    lifecycleCallbacks: {  }

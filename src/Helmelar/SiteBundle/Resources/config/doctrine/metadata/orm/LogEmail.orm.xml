@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="LogEmail" table="LOG_EMAIL">
+    <id name="logEmailId" type="integer" column="LOG_EMAIL_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="logEmailUserId" type="integer" column="LOG_EMAIL_USER_ID" nullable="false"/>
+    <field name="logEmailSenderUserId" type="integer" column="LOG_EMAIL_SENDER_USER_ID" nullable="false"/>
+    <field name="logEmailDateSend" type="datetime" column="LOG_EMAIL_DATE_SEND" nullable="false"/>
+    <field name="logEmailDateStamp" type="datetime" column="LOG_EMAIL_DATE_STAMP" nullable="false"/>
+    <field name="logEmailDateView" type="datetime" column="LOG_EMAIL_DATE_VIEW" nullable="false"/>
+    <field name="logEmailReason" type="boolean" column="LOG_EMAIL_REASON" nullable="false"/>
+  </entity>
+</doctrine-mapping>

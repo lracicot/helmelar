@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelGodGod" table="REL_GOD_GOD">
+    <id name="relGodGodId" type="integer" column="REL_GOD_GOD_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="godIdFrom" type="integer" column="GOD_ID_FROM" nullable="false"/>
+    <field name="godIdTo" type="integer" column="GOD_ID_TO" nullable="false"/>
+    <field name="relGodGodType" type="boolean" column="REL_GOD_GOD_TYPE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

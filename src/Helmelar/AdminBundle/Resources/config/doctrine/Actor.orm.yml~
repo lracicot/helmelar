@@ -1,0 +1,33 @@
+Helmelar\SiteBundle\Entity\Actor:
+    type: entity
+    table: ACTOR
+    fields:
+        actorId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: ACTOR_ID
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: USER_ID
+        organisatorRefId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: ORGANISATOR_REF_ID
+        actorTitle:
+            type: string
+            length: 55
+            fixed: false
+            nullable: false
+            column: ACTOR_TITLE
+        actorDate:
+            type: datetime
+            nullable: false
+            column: ACTOR_DATE
+    lifecycleCallbacks: {  }

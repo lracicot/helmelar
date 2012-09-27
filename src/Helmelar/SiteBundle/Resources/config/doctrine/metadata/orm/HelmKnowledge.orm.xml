@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmKnowledge" table="HELM_KNOWLEDGE">
+    <id name="helmKnowledgeId" type="integer" column="HELM_KNOWLEDGE_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmKnowledgeName" type="string" column="HELM_KNOWLEDGE_NAME" length="255" nullable="false"/>
+    <field name="helmKnowledgeType" type="boolean" column="HELM_KNOWLEDGE_TYPE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

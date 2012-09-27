@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmProfessionFamily" table="HELM_PROFESSION_FAMILY">
+    <id name="helmProfessionFamilyId" type="integer" column="HELM_PROFESSION_FAMILY_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmProfessionFamilyName" type="string" column="HELM_PROFESSION_FAMILY_NAME" length="20" nullable="false"/>
+    <field name="helmProfessionFamilyDescription" type="text" column="HELM_PROFESSION_FAMILY_DESCRIPTION" nullable="true"/>
+  </entity>
+</doctrine-mapping>

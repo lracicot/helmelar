@@ -1,0 +1,81 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmProfession
+ *
+ * @ORM\Table(name="HELM_PROFESSION")
+ * @ORM\Entity
+ */
+class HelmProfession
+{
+    /**
+     * @var integer $helmProfessionId
+     *
+     * @ORM\Column(name="HELM_PROFESSION_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmProfessionId;
+
+    /**
+     * @var string $helmProfessionName
+     *
+     * @ORM\Column(name="HELM_PROFESSION_NAME", type="string", length=50, nullable=false)
+     */
+    private $helmProfessionName;
+
+    /**
+     * @var string $helmProfessionDescription
+     *
+     * @ORM\Column(name="HELM_PROFESSION_DESCRIPTION", type="text", nullable=true)
+     */
+    private $helmProfessionDescription;
+
+    /**
+     * @var integer $helmProfessionLevelMinimum
+     *
+     * @ORM\Column(name="HELM_PROFESSION_LEVEL_MINIMUM", type="integer", nullable=false)
+     */
+    private $helmProfessionLevelMinimum;
+
+    /**
+     * @var string $helmProfessionRestriction
+     *
+     * @ORM\Column(name="HELM_PROFESSION_RESTRICTION", type="text", nullable=false)
+     */
+    private $helmProfessionRestriction;
+
+    /**
+     * @var string $helmProfessionBonus
+     *
+     * @ORM\Column(name="HELM_PROFESSION_BONUS", type="text", nullable=true)
+     */
+    private $helmProfessionBonus;
+
+    /**
+     * @var string $helmProfessionMalus
+     *
+     * @ORM\Column(name="HELM_PROFESSION_MALUS", type="text", nullable=true)
+     */
+    private $helmProfessionMalus;
+
+    /**
+     * @var boolean $helmProfessionType
+     *
+     * @ORM\Column(name="HELM_PROFESSION_TYPE", type="boolean", nullable=true)
+     */
+    private $helmProfessionType;
+
+    /**
+     * @var boolean $helmProfessionFamilyId
+     *
+     * @ORM\Column(name="HELM_PROFESSION_FAMILY_ID", type="boolean", nullable=true)
+     */
+    private $helmProfessionFamilyId;
+
+
+}

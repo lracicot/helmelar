@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Quest" table="QUEST">
+    <id name="questId" type="integer" column="QUEST_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="questRefId" type="integer" column="QUEST_REF_ID" nullable="false"/>
+    <field name="questIdeaId" type="integer" column="QUEST_IDEA_ID" nullable="false"/>
+    <field name="questTitle" type="string" column="QUEST_TITLE" length="255" nullable="false"/>
+    <field name="questShortDescription" type="text" column="QUEST_SHORT_DESCRIPTION" nullable="false"/>
+    <field name="questDescription" type="text" column="QUEST_DESCRIPTION" nullable="false"/>
+    <field name="questIntro" type="text" column="QUEST_INTRO" nullable="false"/>
+    <field name="questGoal" type="text" column="QUEST_GOAL" nullable="false"/>
+    <field name="questTarget" type="text" column="QUEST_TARGET" nullable="false"/>
+    <field name="questLength" type="integer" column="QUEST_LENGTH" nullable="false"/>
+    <field name="questDate" type="datetime" column="QUEST_DATE" nullable="false"/>
+    <field name="organisatorId" type="integer" column="ORGANISATOR_ID" nullable="false"/>
+    <field name="questNote" type="text" column="QUEST_NOTE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

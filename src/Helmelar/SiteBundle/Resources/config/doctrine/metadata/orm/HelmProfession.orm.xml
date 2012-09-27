@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmProfession" table="HELM_PROFESSION">
+    <id name="helmProfessionId" type="integer" column="HELM_PROFESSION_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmProfessionName" type="string" column="HELM_PROFESSION_NAME" length="50" nullable="false"/>
+    <field name="helmProfessionDescription" type="text" column="HELM_PROFESSION_DESCRIPTION" nullable="true"/>
+    <field name="helmProfessionLevelMinimum" type="integer" column="HELM_PROFESSION_LEVEL_MINIMUM" nullable="false"/>
+    <field name="helmProfessionRestriction" type="text" column="HELM_PROFESSION_RESTRICTION" nullable="false"/>
+    <field name="helmProfessionBonus" type="text" column="HELM_PROFESSION_BONUS" nullable="true"/>
+    <field name="helmProfessionMalus" type="text" column="HELM_PROFESSION_MALUS" nullable="true"/>
+    <field name="helmProfessionType" type="boolean" column="HELM_PROFESSION_TYPE" nullable="true"/>
+    <field name="helmProfessionFamilyId" type="boolean" column="HELM_PROFESSION_FAMILY_ID" nullable="true"/>
+  </entity>
+</doctrine-mapping>

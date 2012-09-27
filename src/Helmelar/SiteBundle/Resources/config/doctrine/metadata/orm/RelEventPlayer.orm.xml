@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelEventPlayer" table="REL_EVENT_PLAYER">
+    <id name="relEventPlayerId" type="integer" column="REL_EVENT_PLAYER_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="eventId" type="integer" column="EVENT_ID" nullable="false"/>
+    <field name="playerId" type="integer" column="PLAYER_ID" nullable="false"/>
+    <field name="relEventPlayerType" type="boolean" column="REL_EVENT_PLAYER_TYPE" nullable="false"/>
+    <field name="userIdEnter" type="integer" column="USER_ID_ENTER" nullable="false"/>
+    <field name="ip" type="string" column="IP" length="15" nullable="false"/>
+  </entity>
+</doctrine-mapping>

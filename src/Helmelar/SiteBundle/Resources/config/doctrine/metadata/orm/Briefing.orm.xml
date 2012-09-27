@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Briefing" table="BRIEFING">
+    <id name="briefingId" type="integer" column="BRIEFING_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="scenarioId" type="integer" column="SCENARIO_ID" nullable="false"/>
+    <field name="briefingType" type="boolean" column="BRIEFING_TYPE" nullable="false"/>
+    <field name="briefingText" type="text" column="BRIEFING_TEXT" nullable="false"/>
+    <field name="organisatorId" type="integer" column="ORGANISATOR_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Modification" table="MODIFICATION">
+    <id name="modificationId" type="integer" column="MODIFICATION_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="playerId" type="integer" column="PLAYER_ID" nullable="false"/>
+    <field name="charactId" type="integer" column="CHARACT_ID" nullable="false"/>
+    <field name="modificationField" type="string" column="MODIFICATION_FIELD" length="255" nullable="false"/>
+    <field name="modificationChangeFrom" type="text" column="MODIFICATION_CHANGE_FROM" nullable="false"/>
+    <field name="modificationTo" type="text" column="MODIFICATION_TO" nullable="false"/>
+    <field name="modificationDate" type="datetime" column="MODIFICATION_DATE" nullable="false"/>
+    <field name="organisatorId" type="integer" column="ORGANISATOR_ID" nullable="false"/>
+    <field name="modificationStatus" type="boolean" column="MODIFICATION_STATUS" nullable="false"/>
+  </entity>
+</doctrine-mapping>

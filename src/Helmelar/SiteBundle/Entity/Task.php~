@@ -1,0 +1,158 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Task
+ *
+ * @ORM\Table(name="TASK")
+ * @ORM\Entity
+ */
+class Task
+{
+    /**
+     * @var integer $taskId
+     *
+     * @ORM\Column(name="TASK_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $taskId;
+
+    /**
+     * @var string $taskName
+     *
+     * @ORM\Column(name="TASK_NAME", type="string", length=255, nullable=false)
+     */
+    private $taskName;
+
+    /**
+     * @var string $taskDescription
+     *
+     * @ORM\Column(name="TASK_DESCRIPTION", type="text", nullable=false)
+     */
+    private $taskDescription;
+
+    /**
+     * @var boolean $taskType
+     *
+     * @ORM\Column(name="TASK_TYPE", type="boolean", nullable=false)
+     */
+    private $taskType;
+
+    /**
+     * @var boolean $taskPriority
+     *
+     * @ORM\Column(name="TASK_PRIORITY", type="boolean", nullable=false)
+     */
+    private $taskPriority;
+
+    /**
+     * @var integer $senderOrganisatorId
+     *
+     * @ORM\Column(name="SENDER_ORGANISATOR_ID", type="integer", nullable=false)
+     */
+    private $senderOrganisatorId;
+
+    /**
+     * @var integer $receiverOrganisatorId
+     *
+     * @ORM\Column(name="RECEIVER_ORGANISATOR_ID", type="integer", nullable=false)
+     */
+    private $receiverOrganisatorId;
+
+    /**
+     * @var boolean $taskStatus
+     *
+     * @ORM\Column(name="TASK_STATUS", type="boolean", nullable=false)
+     */
+    private $taskStatus;
+
+    /**
+     * @var boolean $taskLockStatus
+     *
+     * @ORM\Column(name="TASK_LOCK_STATUS", type="boolean", nullable=false)
+     */
+    private $taskLockStatus;
+
+    /**
+     * @var boolean $taskPrctComplete
+     *
+     * @ORM\Column(name="TASK_PRCT_COMPLETE", type="boolean", nullable=false)
+     */
+    private $taskPrctComplete;
+
+    /**
+     * @var float $taskTimeEstimated
+     *
+     * @ORM\Column(name="TASK_TIME_ESTIMATED", type="float", nullable=false)
+     */
+    private $taskTimeEstimated;
+
+    /**
+     * @var float $taskTimeCompleted
+     *
+     * @ORM\Column(name="TASK_TIME_COMPLETED", type="float", nullable=false)
+     */
+    private $taskTimeCompleted;
+
+    /**
+     * @var string $taskNote
+     *
+     * @ORM\Column(name="TASK_NOTE", type="text", nullable=false)
+     */
+    private $taskNote;
+
+    /**
+     * @var \DateTime $taskDateCreated
+     *
+     * @ORM\Column(name="TASK_DATE_CREATED", type="date", nullable=false)
+     */
+    private $taskDateCreated;
+
+    /**
+     * @var \DateTime $taskDateAccepted
+     *
+     * @ORM\Column(name="TASK_DATE_ACCEPTED", type="date", nullable=false)
+     */
+    private $taskDateAccepted;
+
+    /**
+     * @var \DateTime $taskDateCompleted
+     *
+     * @ORM\Column(name="TASK_DATE_COMPLETED", type="date", nullable=false)
+     */
+    private $taskDateCompleted;
+
+    /**
+     * @var \DateTime $taskTimestamp
+     *
+     * @ORM\Column(name="TASK_TIMESTAMP", type="datetime", nullable=false)
+     */
+    private $taskTimestamp;
+
+    /**
+     * @var \DateTime $taskDateDeadline
+     *
+     * @ORM\Column(name="TASK_DATE_DEADLINE", type="date", nullable=false)
+     */
+    private $taskDateDeadline;
+
+    /**
+     * @var string $taskComments
+     *
+     * @ORM\Column(name="TASK_COMMENTS", type="text", nullable=false)
+     */
+    private $taskComments;
+
+    /**
+     * @var integer $taskOrder
+     *
+     * @ORM\Column(name="TASK_ORDER", type="integer", nullable=false)
+     */
+    private $taskOrder;
+
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelScenarioQuest" table="REL_SCENARIO_QUEST">
+    <id name="relScenarioQuestId" type="integer" column="REL_SCENARIO_QUEST_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="scenarioId" type="integer" column="SCENARIO_ID" nullable="false"/>
+    <field name="questId" type="integer" column="QUEST_ID" nullable="false"/>
+    <field name="relScenarioQuestDatetime" type="datetime" column="REL_SCENARIO_QUEST_DATETIME" nullable="false"/>
+  </entity>
+</doctrine-mapping>

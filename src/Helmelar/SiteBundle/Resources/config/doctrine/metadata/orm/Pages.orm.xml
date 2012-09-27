@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Pages" table="PAGES">
+    <id name="pagesId" type="integer" column="PAGES_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="relatedId" type="integer" column="RELATED_ID" nullable="false"/>
+    <field name="pagesTitle" type="string" column="PAGES_TITLE" length="255" nullable="false"/>
+    <field name="pagesText" type="text" column="PAGES_TEXT" nullable="false"/>
+    <field name="pagesLanguage" type="string" column="PAGES_LANGUAGE" length="11" nullable="false"/>
+    <field name="pagesTimestamp" type="datetime" column="PAGES_TIMESTAMP" nullable="false"/>
+    <field name="pagesOrder" type="integer" column="PAGES_ORDER" nullable="false"/>
+  </entity>
+</doctrine-mapping>

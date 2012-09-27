@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Faq" table="FAQ">
+    <id name="faqId" type="integer" column="FAQ_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="faqCategoryId" type="boolean" column="FAQ_CATEGORY_ID" nullable="false"/>
+    <field name="faqQuestion" type="text" column="FAQ_QUESTION" nullable="false"/>
+    <field name="faqAnswer" type="text" column="FAQ_ANSWER" nullable="false"/>
+    <field name="faqDate" type="date" column="FAQ_DATE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

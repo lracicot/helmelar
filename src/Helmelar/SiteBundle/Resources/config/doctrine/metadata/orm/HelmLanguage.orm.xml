@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="HelmLanguage" table="HELM_LANGUAGE">
+    <id name="helmLanguageId" type="integer" column="HELM_LANGUAGE_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmLanguageKey" type="string" column="HELM_LANGUAGE_KEY" length="255" nullable="false"/>
+    <field name="helmLanguageWord" type="string" column="HELM_LANGUAGE_WORD" length="255" nullable="false"/>
+    <field name="helmRaceId" type="integer" column="HELM_RACE_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,95 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Event
+ *
+ * @ORM\Table(name="EVENT")
+ * @ORM\Entity
+ */
+class Event
+{
+    /**
+     * @var integer $eventId
+     *
+     * @ORM\Column(name="EVENT_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $eventId;
+
+    /**
+     * @var string $eventName
+     *
+     * @ORM\Column(name="EVENT_NAME", type="string", length=255, nullable=false)
+     */
+    private $eventName;
+
+    /**
+     * @var \DateTime $eventDateStart
+     *
+     * @ORM\Column(name="EVENT_DATE_START", type="datetime", nullable=false)
+     */
+    private $eventDateStart;
+
+    /**
+     * @var \DateTime $eventDateEnd
+     *
+     * @ORM\Column(name="EVENT_DATE_END", type="datetime", nullable=false)
+     */
+    private $eventDateEnd;
+
+    /**
+     * @var \DateTime $eventTime
+     *
+     * @ORM\Column(name="EVENT_TIME", type="time", nullable=false)
+     */
+    private $eventTime;
+
+    /**
+     * @var string $eventDescription
+     *
+     * @ORM\Column(name="EVENT_DESCRIPTION", type="text", nullable=false)
+     */
+    private $eventDescription;
+
+    /**
+     * @var boolean $eventType
+     *
+     * @ORM\Column(name="EVENT_TYPE", type="boolean", nullable=false)
+     */
+    private $eventType;
+
+    /**
+     * @var float $eventPrice
+     *
+     * @ORM\Column(name="EVENT_PRICE", type="float", nullable=false)
+     */
+    private $eventPrice;
+
+    /**
+     * @var float $eventReducePrice
+     *
+     * @ORM\Column(name="EVENT_REDUCE_PRICE", type="float", nullable=false)
+     */
+    private $eventReducePrice;
+
+    /**
+     * @var boolean $eventPreinscript
+     *
+     * @ORM\Column(name="EVENT_PREINSCRIPT", type="boolean", nullable=false)
+     */
+    private $eventPreinscript;
+
+    /**
+     * @var string $eventPreBrefing
+     *
+     * @ORM\Column(name="EVENT_PRE_BREFING", type="text", nullable=false)
+     */
+    private $eventPreBrefing;
+
+
+}

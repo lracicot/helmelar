@@ -1,0 +1,395 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Quest
+ *
+ * @ORM\Table(name="QUEST")
+ * @ORM\Entity
+ */
+class Quest
+{
+    /**
+     * @var integer $questId
+     *
+     * @ORM\Column(name="QUEST_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $questId;
+
+    /**
+     * @var integer $questRefId
+     *
+     * @ORM\Column(name="QUEST_REF_ID", type="integer", nullable=false)
+     */
+    private $questRefId;
+
+    /**
+     * @var integer $questIdeaId
+     *
+     * @ORM\Column(name="QUEST_IDEA_ID", type="integer", nullable=false)
+     */
+    private $questIdeaId;
+
+    /**
+     * @var string $questTitle
+     *
+     * @ORM\Column(name="QUEST_TITLE", type="string", length=255, nullable=false)
+     */
+    private $questTitle;
+
+    /**
+     * @var string $questShortDescription
+     *
+     * @ORM\Column(name="QUEST_SHORT_DESCRIPTION", type="text", nullable=false)
+     */
+    private $questShortDescription;
+
+    /**
+     * @var string $questDescription
+     *
+     * @ORM\Column(name="QUEST_DESCRIPTION", type="text", nullable=false)
+     */
+    private $questDescription;
+
+    /**
+     * @var string $questIntro
+     *
+     * @ORM\Column(name="QUEST_INTRO", type="text", nullable=false)
+     */
+    private $questIntro;
+
+    /**
+     * @var string $questGoal
+     *
+     * @ORM\Column(name="QUEST_GOAL", type="text", nullable=false)
+     */
+    private $questGoal;
+
+    /**
+     * @var string $questTarget
+     *
+     * @ORM\Column(name="QUEST_TARGET", type="text", nullable=false)
+     */
+    private $questTarget;
+
+    /**
+     * @var integer $questLength
+     *
+     * @ORM\Column(name="QUEST_LENGTH", type="integer", nullable=false)
+     */
+    private $questLength;
+
+    /**
+     * @var \DateTime $questDate
+     *
+     * @ORM\Column(name="QUEST_DATE", type="datetime", nullable=false)
+     */
+    private $questDate;
+
+    /**
+     * @var integer $organisatorId
+     *
+     * @ORM\Column(name="ORGANISATOR_ID", type="integer", nullable=false)
+     */
+    private $organisatorId;
+
+    /**
+     * @var string $questNote
+     *
+     * @ORM\Column(name="QUEST_NOTE", type="text", nullable=false)
+     */
+    private $questNote;
+
+
+
+    /**
+     * Get questId
+     *
+     * @return integer 
+     */
+    public function getQuestId()
+    {
+        return $this->questId;
+    }
+
+    /**
+     * Set questRefId
+     *
+     * @param integer $questRefId
+     * @return Quest
+     */
+    public function setQuestRefId($questRefId)
+    {
+        $this->questRefId = $questRefId;
+    
+        return $this;
+    }
+
+    /**
+     * Get questRefId
+     *
+     * @return integer 
+     */
+    public function getQuestRefId()
+    {
+        return $this->questRefId;
+    }
+
+    /**
+     * Set questIdeaId
+     *
+     * @param integer $questIdeaId
+     * @return Quest
+     */
+    public function setQuestIdeaId($questIdeaId)
+    {
+        $this->questIdeaId = $questIdeaId;
+    
+        return $this;
+    }
+
+    /**
+     * Get questIdeaId
+     *
+     * @return integer 
+     */
+    public function getQuestIdeaId()
+    {
+        return $this->questIdeaId;
+    }
+
+    /**
+     * Set questTitle
+     *
+     * @param string $questTitle
+     * @return Quest
+     */
+    public function setQuestTitle($questTitle)
+    {
+        $this->questTitle = $questTitle;
+    
+        return $this;
+    }
+
+    /**
+     * Get questTitle
+     *
+     * @return string 
+     */
+    public function getQuestTitle()
+    {
+        return $this->questTitle;
+    }
+
+    /**
+     * Set questShortDescription
+     *
+     * @param string $questShortDescription
+     * @return Quest
+     */
+    public function setQuestShortDescription($questShortDescription)
+    {
+        $this->questShortDescription = $questShortDescription;
+    
+        return $this;
+    }
+
+    /**
+     * Get questShortDescription
+     *
+     * @return string 
+     */
+    public function getQuestShortDescription()
+    {
+        return $this->questShortDescription;
+    }
+
+    /**
+     * Set questDescription
+     *
+     * @param string $questDescription
+     * @return Quest
+     */
+    public function setQuestDescription($questDescription)
+    {
+        $this->questDescription = $questDescription;
+    
+        return $this;
+    }
+
+    /**
+     * Get questDescription
+     *
+     * @return string 
+     */
+    public function getQuestDescription()
+    {
+        return $this->questDescription;
+    }
+
+    /**
+     * Set questIntro
+     *
+     * @param string $questIntro
+     * @return Quest
+     */
+    public function setQuestIntro($questIntro)
+    {
+        $this->questIntro = $questIntro;
+    
+        return $this;
+    }
+
+    /**
+     * Get questIntro
+     *
+     * @return string 
+     */
+    public function getQuestIntro()
+    {
+        return $this->questIntro;
+    }
+
+    /**
+     * Set questGoal
+     *
+     * @param string $questGoal
+     * @return Quest
+     */
+    public function setQuestGoal($questGoal)
+    {
+        $this->questGoal = $questGoal;
+    
+        return $this;
+    }
+
+    /**
+     * Get questGoal
+     *
+     * @return string 
+     */
+    public function getQuestGoal()
+    {
+        return $this->questGoal;
+    }
+
+    /**
+     * Set questTarget
+     *
+     * @param string $questTarget
+     * @return Quest
+     */
+    public function setQuestTarget($questTarget)
+    {
+        $this->questTarget = $questTarget;
+    
+        return $this;
+    }
+
+    /**
+     * Get questTarget
+     *
+     * @return string 
+     */
+    public function getQuestTarget()
+    {
+        return $this->questTarget;
+    }
+
+    /**
+     * Set questLength
+     *
+     * @param integer $questLength
+     * @return Quest
+     */
+    public function setQuestLength($questLength)
+    {
+        $this->questLength = $questLength;
+    
+        return $this;
+    }
+
+    /**
+     * Get questLength
+     *
+     * @return integer 
+     */
+    public function getQuestLength()
+    {
+        return $this->questLength;
+    }
+
+    /**
+     * Set questDate
+     *
+     * @param \DateTime $questDate
+     * @return Quest
+     */
+    public function setQuestDate($questDate)
+    {
+        $this->questDate = $questDate;
+    
+        return $this;
+    }
+
+    /**
+     * Get questDate
+     *
+     * @return \DateTime 
+     */
+    public function getQuestDate()
+    {
+        return $this->questDate;
+    }
+
+    /**
+     * Set organisatorId
+     *
+     * @param integer $organisatorId
+     * @return Quest
+     */
+    public function setOrganisatorId($organisatorId)
+    {
+        $this->organisatorId = $organisatorId;
+    
+        return $this;
+    }
+
+    /**
+     * Get organisatorId
+     *
+     * @return integer 
+     */
+    public function getOrganisatorId()
+    {
+        return $this->organisatorId;
+    }
+
+    /**
+     * Set questNote
+     *
+     * @param string $questNote
+     * @return Quest
+     */
+    public function setQuestNote($questNote)
+    {
+        $this->questNote = $questNote;
+    
+        return $this;
+    }
+
+    /**
+     * Get questNote
+     *
+     * @return string 
+     */
+    public function getQuestNote()
+    {
+        return $this->questNote;
+    }
+}

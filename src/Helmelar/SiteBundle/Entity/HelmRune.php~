@@ -1,0 +1,53 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmRune
+ *
+ * @ORM\Table(name="HELM_RUNE")
+ * @ORM\Entity
+ */
+class HelmRune
+{
+    /**
+     * @var integer $helmRuneId
+     *
+     * @ORM\Column(name="HELM_RUNE_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmRuneId;
+
+    /**
+     * @var string $helmRuneName
+     *
+     * @ORM\Column(name="HELM_RUNE_NAME", type="string", length=55, nullable=false)
+     */
+    private $helmRuneName;
+
+    /**
+     * @var boolean $helmRuneLvl
+     *
+     * @ORM\Column(name="HELM_RUNE_LVL", type="boolean", nullable=false)
+     */
+    private $helmRuneLvl;
+
+    /**
+     * @var string $helmRunePower
+     *
+     * @ORM\Column(name="HELM_RUNE_POWER", type="text", nullable=false)
+     */
+    private $helmRunePower;
+
+    /**
+     * @var string $helmRuneImage
+     *
+     * @ORM\Column(name="HELM_RUNE_IMAGE", type="string", length=255, nullable=false)
+     */
+    private $helmRuneImage;
+
+
+}

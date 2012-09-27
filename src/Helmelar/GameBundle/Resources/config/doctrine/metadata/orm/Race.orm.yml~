@@ -1,0 +1,84 @@
+HelmRace:
+    type: entity
+    table: HELM_RACE
+    fields:
+        helmRaceId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_RACE_ID
+            generator:
+                strategy: IDENTITY
+        helmRaceName:
+            type: string
+            length: 55
+            fixed: false
+            nullable: false
+            column: HELM_RACE_NAME
+        helmRaceRegeneration:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_REGENERATION
+        helmRaceDescription:
+            type: text
+            nullable: true
+            column: HELM_RACE_DESCRIPTION
+        helmRaceProfil:
+            type: text
+            nullable: false
+            column: HELM_RACE_PROFIL
+        helmRaceBonus:
+            type: text
+            nullable: true
+            column: HELM_RACE_BONUS
+        helmRaceMalus:
+            type: text
+            nullable: true
+            column: HELM_RACE_MALUS
+        helmRacePredilectionClass:
+            type: text
+            nullable: false
+            column: HELM_RACE_PREDILECTION_CLASS
+        helmRacePhysicalKnowledgeMax:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_PHYSICAL_KNOWLEDGE_MAX
+        helmRaceMentalKnowledgeMax:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_MENTAL_KNOWLEDGE_MAX
+        helmRaceMagicKnowledgeMax:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_MAGIC_KNOWLEDGE_MAX
+        helmRaceForbiddenKnowledge:
+            type: text
+            nullable: false
+            column: HELM_RACE_FORBIDDEN_KNOWLEDGE
+        helmRaceRestriction:
+            type: text
+            nullable: false
+            column: HELM_RACE_RESTRICTION
+        helmRaceLanguage:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: HELM_RACE_LANGUAGE
+        helmRaceType:
+            type: boolean
+            nullable: true
+            column: HELM_RACE_TYPE
+        helmRaceBehavior:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_BEHAVIOR
+        helmRaceOrder:
+            type: boolean
+            nullable: false
+            column: HELM_RACE_ORDER
+        helmRaceHistory:
+            type: text
+            nullable: false
+            column: HELM_RACE_HISTORY
+    lifecycleCallbacks: {  }

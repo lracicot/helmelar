@@ -1,0 +1,103 @@
+Helmelar\GameBundle\Entity\HelmSpell:
+    type: entity
+    table: HELM_SPELL
+    fields:
+        helmSpellId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_SPELL_ID
+            generator:
+                strategy: IDENTITY
+        helmSpellType:
+            type: boolean
+            nullable: false
+            column: HELM_SPELL_TYPE
+        helmSpellLvl:
+            type: boolean
+            nullable: false
+            column: HELM_SPELL_LVL
+        helmSpellPlan:
+            type: boolean
+            nullable: false
+            column: HELM_SPELL_PLAN
+        helmSpellGodId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_SPELL_GOD_ID
+        helmSpellRaceId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_SPELL_RACE_ID
+        helmSpellName:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: HELM_SPELL_NAME
+        helmSpellRuneId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_SPELL_RUNE_ID
+        helmSpellCast:
+            type: text
+            nullable: false
+            column: HELM_SPELL_CAST
+        helmSpellFinalWords:
+            type: text
+            nullable: false
+            column: HELM_SPELL_FINAL_WORDS
+        helmSpellEffect:
+            type: text
+            nullable: false
+            column: HELM_SPELL_EFFECT
+        helmSpellDuration:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: HELM_SPELL_DURATION
+        helmSpellSpecialDuration:
+            type: string
+            length: 70
+            fixed: false
+            nullable: false
+            column: HELM_SPELL_SPECIAL_DURATION
+        helmSpellReagent:
+            type: text
+            nullable: false
+            column: HELM_SPELL_REAGENT
+        helmSpellRestriction:
+            type: text
+            nullable: false
+            column: HELM_SPELL_RESTRICTION
+        helmSpellSpecial:
+            type: text
+            nullable: false
+            column: HELM_SPELL_SPECIAL
+        helmSpellHistory:
+            type: text
+            nullable: false
+            column: HELM_SPELL_HISTORY
+        helmSpellCreatorId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: HELM_SPELL_CREATOR_ID
+        helmSpellDate:
+            type: datetime
+            nullable: false
+            column: HELM_SPELL_DATE
+        helmSpellDateRev:
+            type: datetime
+            nullable: false
+            column: HELM_SPELL_DATE_REV
+        helmSpellNote:
+            type: text
+            nullable: false
+            column: HELM_SPELL_NOTE
+    lifecycleCallbacks: {  }

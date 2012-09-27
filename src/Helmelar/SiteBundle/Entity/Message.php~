@@ -1,0 +1,95 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\Message
+ *
+ * @ORM\Table(name="MESSAGE")
+ * @ORM\Entity
+ */
+class Message
+{
+    /**
+     * @var integer $messageId
+     *
+     * @ORM\Column(name="MESSAGE_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $messageId;
+
+    /**
+     * @var integer $messageRefId
+     *
+     * @ORM\Column(name="MESSAGE_REF_ID", type="integer", nullable=false)
+     */
+    private $messageRefId;
+
+    /**
+     * @var string $messageTitle
+     *
+     * @ORM\Column(name="MESSAGE_TITLE", type="string", length=255, nullable=false)
+     */
+    private $messageTitle;
+
+    /**
+     * @var string $messageText
+     *
+     * @ORM\Column(name="MESSAGE_TEXT", type="text", nullable=false)
+     */
+    private $messageText;
+
+    /**
+     * @var integer $messageFromUserId
+     *
+     * @ORM\Column(name="MESSAGE_FROM_USER_ID", type="integer", nullable=false)
+     */
+    private $messageFromUserId;
+
+    /**
+     * @var integer $messageToUserId
+     *
+     * @ORM\Column(name="MESSAGE_TO_USER_ID", type="integer", nullable=false)
+     */
+    private $messageToUserId;
+
+    /**
+     * @var \DateTime $messageDate
+     *
+     * @ORM\Column(name="MESSAGE_DATE", type="datetime", nullable=false)
+     */
+    private $messageDate;
+
+    /**
+     * @var \DateTime $messageDateRead
+     *
+     * @ORM\Column(name="MESSAGE_DATE_READ", type="datetime", nullable=false)
+     */
+    private $messageDateRead;
+
+    /**
+     * @var integer $messageSenderStatus
+     *
+     * @ORM\Column(name="MESSAGE_SENDER_STATUS", type="integer", nullable=false)
+     */
+    private $messageSenderStatus;
+
+    /**
+     * @var integer $messageReciverStatus
+     *
+     * @ORM\Column(name="MESSAGE_RECIVER_STATUS", type="integer", nullable=false)
+     */
+    private $messageReciverStatus;
+
+    /**
+     * @var integer $messageType
+     *
+     * @ORM\Column(name="MESSAGE_TYPE", type="integer", nullable=false)
+     */
+    private $messageType;
+
+
+}

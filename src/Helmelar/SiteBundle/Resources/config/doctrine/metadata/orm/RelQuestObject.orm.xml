@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelQuestObject" table="REL_QUEST_OBJECT">
+    <id name="relQuestObjectId" type="integer" column="REL_QUEST_OBJECT_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="questId" type="integer" column="QUEST_ID" nullable="false"/>
+    <field name="helmObjectId" type="integer" column="HELM_OBJECT_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

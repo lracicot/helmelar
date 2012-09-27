@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Guild" table="GUILD">
+    <id name="guildId" type="integer" column="GUILD_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="guildName" type="string" column="GUILD_NAME" length="255" nullable="false"/>
+    <field name="guildStatus" type="boolean" column="GUILD_STATUS" nullable="false"/>
+    <field name="helmGodId" type="integer" column="HELM_GOD_ID" nullable="false"/>
+    <field name="helmCultId" type="integer" column="HELM_CULT_ID" nullable="false"/>
+    <field name="helmAlignId" type="integer" column="HELM_ALIGN_ID" nullable="false"/>
+    <field name="guildPrivBg" type="text" column="GUILD_PRIV_BG" nullable="false"/>
+    <field name="guildPubBg" type="text" column="GUILD_PUB_BG" nullable="false"/>
+    <field name="guildGoal" type="text" column="GUILD_GOAL" nullable="false"/>
+    <field name="guildCreation" type="datetime" column="GUILD_CREATION" nullable="false"/>
+    <field name="guildNote" type="text" column="GUILD_NOTE" nullable="false"/>
+  </entity>
+</doctrine-mapping>

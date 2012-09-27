@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RelCultGod" table="REL_CULT_GOD">
+    <id name="relCultGodId" type="integer" column="REL_CULT_GOD_ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="helmCultId" type="integer" column="HELM_CULT_ID" nullable="false"/>
+    <field name="helmGodId" type="integer" column="HELM_GOD_ID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

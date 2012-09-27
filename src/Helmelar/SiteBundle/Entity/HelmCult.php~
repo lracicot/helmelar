@@ -1,0 +1,60 @@
+<?php
+
+namespace Helmelar\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Helmelar\SiteBundle\Entity\HelmCult
+ *
+ * @ORM\Table(name="HELM_CULT")
+ * @ORM\Entity
+ */
+class HelmCult
+{
+    /**
+     * @var integer $helmCultId
+     *
+     * @ORM\Column(name="HELM_CULT_ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $helmCultId;
+
+    /**
+     * @var string $helmCultName
+     *
+     * @ORM\Column(name="HELM_CULT_NAME", type="string", length=55, nullable=false)
+     */
+    private $helmCultName;
+
+    /**
+     * @var boolean $helmCultDivinPlan
+     *
+     * @ORM\Column(name="HELM_CULT_DIVIN_PLAN", type="boolean", nullable=false)
+     */
+    private $helmCultDivinPlan;
+
+    /**
+     * @var string $helmCultDescription
+     *
+     * @ORM\Column(name="HELM_CULT_DESCRIPTION", type="text", nullable=true)
+     */
+    private $helmCultDescription;
+
+    /**
+     * @var string $helmCultSymbol
+     *
+     * @ORM\Column(name="HELM_CULT_SYMBOL", type="text", nullable=false)
+     */
+    private $helmCultSymbol;
+
+    /**
+     * @var string $helmCultPhilosophy
+     *
+     * @ORM\Column(name="HELM_CULT_PHILOSOPHY", type="text", nullable=false)
+     */
+    private $helmCultPhilosophy;
+
+
+}
