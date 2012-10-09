@@ -1,0 +1,30 @@
+guild:
+    pattern:  /
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:index" }
+
+guild_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:show" }
+
+guild_new:
+    pattern:  /new
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:new" }
+
+guild_create:
+    pattern:  /create
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:create" }
+    requirements: { _method: post }
+
+guild_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:edit" }
+
+guild_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:update" }
+    requirements: { _method: post }
+
+guild_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "HelmelarPlayerBundle:Guild:delete" }
+    requirements: { _method: post }

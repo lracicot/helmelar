@@ -1,0 +1,55 @@
+<h1>Guild list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Guildname</th>
+            <th>Guildstatus</th>
+            <th>Helmgodid</th>
+            <th>Helmcultid</th>
+            <th>Helmalignid</th>
+            <th>Guildprivbg</th>
+            <th>Guildpubbg</th>
+            <th>Guildgoal</th>
+            <th>Guildcreation</th>
+            <th>Guildnote</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('guild_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.guildName }}</td>
+            <td>{{ entity.guildStatus }}</td>
+            <td>{{ entity.helmGodId }}</td>
+            <td>{{ entity.helmCultId }}</td>
+            <td>{{ entity.helmAlignId }}</td>
+            <td>{{ entity.guildPrivBg }}</td>
+            <td>{{ entity.guildPubBg }}</td>
+            <td>{{ entity.guildGoal }}</td>
+            <td>{% if entity.guildCreation %}{{ entity.guildCreation|date('Y-m-d H:i:s') }}{% endif %}</td>
+            <td>{{ entity.guildNote }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('guild_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('guild_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('guild_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

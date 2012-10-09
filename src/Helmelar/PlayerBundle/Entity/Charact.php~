@@ -172,7 +172,7 @@ class Charact
      * @ManyToOne(targetEntity="Player")
      * @JoinColumn(name="player_id", referencedColumnName="id")
      */
-     private $player;
+     private $player
 
 
     /**

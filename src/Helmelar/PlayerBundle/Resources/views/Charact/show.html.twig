@@ -1,0 +1,113 @@
+<h1>Charact</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Playerid</th>
+            <td>{{ entity.playerId }}</td>
+        </tr>
+        <tr>
+            <th>Charactname</th>
+            <td>{{ entity.charactName }}</td>
+        </tr>
+        <tr>
+            <th>Characttitle</th>
+            <td>{{ entity.charactTitle }}</td>
+        </tr>
+        <tr>
+            <th>Charactlevel</th>
+            <td>{{ entity.charactLevel }}</td>
+        </tr>
+        <tr>
+            <th>Charactpvtrunk</th>
+            <td>{{ entity.charactPvTrunk }}</td>
+        </tr>
+        <tr>
+            <th>Charactpvarms</th>
+            <td>{{ entity.charactPvArms }}</td>
+        </tr>
+        <tr>
+            <th>Charactpvlegs</th>
+            <td>{{ entity.charactPvLegs }}</td>
+        </tr>
+        <tr>
+            <th>Charactfate</th>
+            <td>{{ entity.charactFate }}</td>
+        </tr>
+        <tr>
+            <th>Charactbonus</th>
+            <td>{{ entity.charactBonus }}</td>
+        </tr>
+        <tr>
+            <th>Charactmalus</th>
+            <td>{{ entity.charactMalus }}</td>
+        </tr>
+        <tr>
+            <th>Charactprivbg</th>
+            <td>{{ entity.charactPrivBg }}</td>
+        </tr>
+        <tr>
+            <th>Charactpubbg</th>
+            <td>{{ entity.charactPubBg }}</td>
+        </tr>
+        <tr>
+            <th>Charactgoal</th>
+            <td>{{ entity.charactGoal }}</td>
+        </tr>
+        <tr>
+            <th>Charactmoney</th>
+            <td>{{ entity.charactMoney }}</td>
+        </tr>
+        <tr>
+            <th>Charactstone</th>
+            <td>{{ entity.charactStone }}</td>
+        </tr>
+        <tr>
+            <th>Charactcreation</th>
+            <td>{{ entity.charactCreation|date('Y-m-d H:i:s') }}</td>
+        </tr>
+        <tr>
+            <th>Charactnotes</th>
+            <td>{{ entity.charactNotes }}</td>
+        </tr>
+        <tr>
+            <th>Alignid</th>
+            <td>{{ entity.alignId }}</td>
+        </tr>
+        <tr>
+            <th>Cultid</th>
+            <td>{{ entity.cultId }}</td>
+        </tr>
+        <tr>
+            <th>Raceid</th>
+            <td>{{ entity.raceId }}</td>
+        </tr>
+        <tr>
+            <th>Godid</th>
+            <td>{{ entity.godId }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('charact') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('charact_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('charact_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

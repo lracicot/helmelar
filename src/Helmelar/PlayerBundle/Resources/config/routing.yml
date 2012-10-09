@@ -2,3 +2,11 @@ helmelar_player_player:
     resource: "@HelmelarPlayerBundle/Resources/config/routing/player.yml"
     prefix:   /player
 
+helmelar_player_charact:
+    resource: "@HelmelarPlayerBundle/Resources/config/routing/charact.yml"
+    prefix:   /charact
+
+helmelar_player_guild:
+    resource: "@HelmelarPlayerBundle/Resources/config/routing/guild.yml"
+    prefix:   /guild
+
