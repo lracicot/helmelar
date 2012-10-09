@@ -1,3 +1,0 @@
-helmelar_site_homepage:
-    pattern:  /{title}
-    defaults: { _controller: HelmelarSiteBundle:Default:index }
