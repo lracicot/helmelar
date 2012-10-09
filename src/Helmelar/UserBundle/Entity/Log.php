@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Log
 {
     /**
-     * @var integer $logId
+     * @var integer $id
      *
      * @ORM\Column(name="LOG_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $logId;
+    private $id;
 
     /**
      * @var string $logEmail
@@ -52,13 +52,13 @@ class Log
 
 
     /**
-     * Get logId
+     * Get Id
      *
      * @return integer 
      */
-    public function getLogId()
+    public function getId()
     {
-        return $this->logId;
+        return $this->id;
     }
 
     /**

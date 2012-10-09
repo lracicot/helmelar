@@ -13,17 +13,18 @@ use Doctrine\ORM\Mapping as ORM;
 class Player
 {
     /**
-     * @var integer $playerId
+     * @var integer $id
      *
      * @ORM\Column(name="PLAYER_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $playerId;
+    private $id;
 
     /**
      * @var integer $userId
      *
+     * @ORM\OneToOne(targetEntity="User")
      * @ORM\Column(name="USER_ID", type="integer", nullable=false)
      */
     private $userId;
@@ -63,9 +64,9 @@ class Player
      *
      * @return integer 
      */
-    public function getPlayerId()
+    public function getId()
     {
-        return $this->playerId;
+        return $this->id;
     }
 
     /**

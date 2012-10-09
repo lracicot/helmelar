@@ -1,11 +1,11 @@
 <?php
 
-namespace Helmelar\SiteBundle\Entity;
+namespace Helmelar\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Helmelar\SiteBundle\Entity\Location
+ * Helmelar\UserBundle\Entity\Location
  *
  * @ORM\Table(name="LOCATION")
  * @ORM\Entity
@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Location
 {
     /**
-     * @var integer $locationId
+     * @var integer $id
      *
      * @ORM\Column(name="LOCATION_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $locationId;
+    private $id;
 
     /**
      * @var integer $locationAddress

@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class User
 {
     /**
-     * @var integer $userId
+     * @var integer $id
      *
      * @ORM\Column(name="USER_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $userId;
+    private $id;
 
     /**
      * @var string $userFirstName
@@ -66,13 +66,13 @@ class User
 
 
     /**
-     * Get userId
+     * Get Id
      *
      * @return integer 
      */
-    public function getUserId()
+    public function getId()
     {
-        return $this->userId;
+        return $this->$id;
     }
 
     /**
