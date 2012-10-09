@@ -10,9 +10,9 @@ helmelar_game:
     resource: "@HelmelarGameBundle/Resources/config/routing.yml"
     prefix:   /
 
-helmelar_player:
+HelmelarPlayerBundle_player:
     resource: "@HelmelarPlayerBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /player
 
 helmelar_site:
     resource: "@HelmelarSiteBundle/Resources/config/routing.yml"

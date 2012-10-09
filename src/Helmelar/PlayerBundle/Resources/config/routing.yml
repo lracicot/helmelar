@@ -1,3 +1,4 @@
-helmelar_player_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: HelmelarPlayerBundle:Default:index }
+helmelar_player_player:
+    resource: "@HelmelarPlayerBundle/Resources/config/routing/player.yml"
+    prefix:   /player
+

@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Contact
 {
     /**
-     * @var integer $contactId
+     * @var integer $id
      *
      * @ORM\Column(name="CONTACT_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $contactId;
+    private $id;
 
     /**
      * @var string $contactTel
@@ -94,13 +94,13 @@ class Contact
 
 
     /**
-     * Get contactId
+     * Get id
      *
      * @return integer 
      */
-    public function getContactId()
+    public function getId()
     {
-        return $this->contactId;
+        return $this->id;
     }
 
     /**

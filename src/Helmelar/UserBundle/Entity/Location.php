@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Location
 {
     /**
-     * @var integer $locationId
+     * @var integer $id
      *
      * @ORM\Column(name="LOCATION_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $locationId;
+    private $id;
 
     /**
      * @var integer $locationAddress
@@ -87,13 +87,13 @@ class Location
 
 
     /**
-     * Get locationId
+     * Get Id
      *
      * @return integer 
      */
-    public function getLocationId()
+    public function getId()
     {
-        return $this->locationId;
+        return $this->id;
     }
 
     /**

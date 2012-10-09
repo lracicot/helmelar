@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Charact
 {
     /**
-     * @var integer $charactId
+     * @var integer $id
      *
      * @ORM\Column(name="CHARACT_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $charactId;
+    private $id;
 
     /**
      * @var integer $playerId
@@ -171,13 +171,13 @@ class Charact
 
 
     /**
-     * Get charactId
+     * Get getId
      *
      * @return integer 
      */
-    public function getCharactId()
+    public function getId()
     {
-        return $this->charactId;
+        return $this->Id;
     }
 
     /**

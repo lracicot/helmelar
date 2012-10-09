@@ -1,0 +1,30 @@
+player:
+    pattern:  /
+    defaults: { _controller: "HelmelarPlayerBundle:Player:index" }
+
+player_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "HelmelarPlayerBundle:Player:show" }
+
+player_new:
+    pattern:  /new
+    defaults: { _controller: "HelmelarPlayerBundle:Player:new" }
+
+player_create:
+    pattern:  /create
+    defaults: { _controller: "HelmelarPlayerBundle:Player:create" }
+    requirements: { _method: post }
+
+player_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "HelmelarPlayerBundle:Player:edit" }
+
+player_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "HelmelarPlayerBundle:Player:update" }
+    requirements: { _method: post }
+
+player_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "HelmelarPlayerBundle:Player:delete" }
+    requirements: { _method: post }

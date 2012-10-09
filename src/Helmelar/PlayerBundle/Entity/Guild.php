@@ -13,13 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Guild
 {
     /**
-     * @var integer $guildId
+     * @var integer $id
      *
      * @ORM\Column(name="GUILD_ID", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $guildId;
+    private $id;
 
     /**
      * @var string $guildName
@@ -94,13 +94,13 @@ class Guild
 
 
     /**
-     * Get guildId
+     * Get getId
      *
      * @return integer 
      */
-    public function getGuildId()
+    public function getId()
     {
-        return $this->guildId;
+        return $this->Id;
     }
 
     /**
