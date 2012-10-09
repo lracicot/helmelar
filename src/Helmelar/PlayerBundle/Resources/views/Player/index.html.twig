@@ -1,0 +1,45 @@
+<h1>Player list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Userid</th>
+            <th>Playerbirthdate</th>
+            <th>Playercreationdate</th>
+            <th>Playerhin</th>
+            <th>Playersickness</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('player_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.userId }}</td>
+            <td>{% if entity.playerBirthdate %}{{ entity.playerBirthdate|date('Y-m-d H:i:s') }}{% endif %}</td>
+            <td>{% if entity.playerCreationDate %}{{ entity.playerCreationDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+            <td>{{ entity.playerHin }}</td>
+            <td>{{ entity.playerSickness }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('player_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('player_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('player_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>
