@@ -169,14 +169,14 @@ class Charact
     private $godId;
 
     /**
-     * @ManyToOne(targetEntity="Player")
-     * @JoinColumn(name="player_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Player")
+     * @ORM\JoinColumn(name="player_id", referencedColumnName="PLAYER_ID")
      */
      private $player;
 
 
     /**
-     * Get getId
+     * Get id
      *
      * @return integer 
      */

@@ -42,9 +42,9 @@
             <td>{{ entity.charactFate }}</td>
             <td>{{ entity.charactBonus }}</td>
             <td>{{ entity.charactMalus }}</td>
-            <td>{{ entity.charactPrivBg }}</td>
-            <td>{{ entity.charactPubBg }}</td>
-            <td>{{ entity.charactGoal }}</td>
+            <td>{{ entity.charactPrivBg | truncate(100) }}</td>
+            <td>{{ entity.charactPubBg | truncate(100) }}</td>
+            <td>{{ entity.charactGoal | truncate(100) }}</td>
             <td>{{ entity.charactMoney }}</td>
             <td>{{ entity.charactStone }}</td>
             <td>{% if entity.charactCreation %}{{ entity.charactCreation|date('Y-m-d H:i:s') }}{% endif %}</td>
