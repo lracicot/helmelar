@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+  <duplication lines="12" tokens="33">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/HelmelarGameExtension.php" line="15"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/DependencyInjection/HelmelarPlayerExtension.php" line="15"/>
+    <codefragment>class HelmelarGameExtension extends Extension
+{
+    /**
+     * {@inheritDoc}
+     */
+    public function load(array $configs, ContainerBuilder $container)
+    {
+        $configuration = new Configuration();
+        $config = $this-&gt;processConfiguration($configuration, $configs);
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader-&gt;load('services.yml');
+</codefragment>
+  </duplication>
+  <duplication lines="12" tokens="33">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/HelmelarGameExtension.php" line="15"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/DependencyInjection/HelmelarUserExtension.php" line="15"/>
+    <codefragment>class HelmelarGameExtension extends Extension
+{
+    /**
+     * {@inheritDoc}
+     */
+    public function load(array $configs, ContainerBuilder $container)
+    {
+        $configuration = new Configuration();
+        $config = $this-&gt;processConfiguration($configuration, $configs);
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader-&gt;load('services.yml');
+</codefragment>
+  </duplication>
+  <duplication lines="13" tokens="42">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <codefragment>namespace Helmelar\GameBundle\Tests\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
+class DefaultControllerTest extends WebTestCase
+{
+    public function testIndex()
+    {
+        $client = static::createClient();
+
+        $crawler = $client-&gt;request('GET', '/hello/Fabien');
+
+        $this-&gt;assertTrue($crawler-&gt;filter('html:contains("Hello Fabien")')-&gt;count() &gt; 0);
+</codefragment>
+  </duplication>
+  <duplication lines="12" tokens="33">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/HelmelarGameExtension.php" line="15"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/DependencyInjection/HelmelarAdminExtension.php" line="15"/>
+    <codefragment>class HelmelarGameExtension extends Extension
+{
+    /**
+     * {@inheritDoc}
+     */
+    public function load(array $configs, ContainerBuilder $container)
+    {
+        $configuration = new Configuration();
+        $config = $this-&gt;processConfiguration($configuration, $configs);
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader-&gt;load('services.yml');
+</codefragment>
+  </duplication>
+  <duplication lines="13" tokens="42">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <codefragment>namespace Helmelar\GameBundle\Tests\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
+class DefaultControllerTest extends WebTestCase
+{
+    public function testIndex()
+    {
+        $client = static::createClient();
+
+        $crawler = $client-&gt;request('GET', '/hello/Fabien');
+
+        $this-&gt;assertTrue($crawler-&gt;filter('html:contains("Hello Fabien")')-&gt;count() &gt; 0);
+</codefragment>
+  </duplication>
+  <duplication lines="12" tokens="33">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/HelmelarGameExtension.php" line="15"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/DependencyInjection/HelmelarSiteExtension.php" line="15"/>
+    <codefragment>class HelmelarGameExtension extends Extension
+{
+    /**
+     * {@inheritDoc}
+     */
+    public function load(array $configs, ContainerBuilder $container)
+    {
+        $configuration = new Configuration();
+        $config = $this-&gt;processConfiguration($configuration, $configs);
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader-&gt;load('services.yml');
+</codefragment>
+  </duplication>
+  <duplication lines="13" tokens="42">
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <file path="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Tests/Controller/DefaultControllerTest.php" line="3"/>
+    <codefragment>namespace Helmelar\GameBundle\Tests\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
+class DefaultControllerTest extends WebTestCase
+{
+    public function testIndex()
+    {
+        $client = static::createClient();
+
+        $crawler = $client-&gt;request('GET', '/hello/Fabien');
+
+        $this-&gt;assertTrue($crawler-&gt;filter('html:contains("Hello Fabien")')-&gt;count() &gt; 0);
+</codefragment>
+  </duplication>
+</pmd-cpd>

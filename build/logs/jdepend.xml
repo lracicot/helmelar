@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="Acme\DemoBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/AcmeDemoBundle.php">AcmeDemoBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Acme\DemoBundle\Controller">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Controller/DemoController.php">DemoController</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Controller/SecuredController.php">SecuredController</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Controller/WelcomeController.php">WelcomeController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Acme\DemoBundle\Form</Package>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+        <Package>Symfony\Component\HttpFoundation</Package>
+        <Package>Symfony\Component\Security\Core</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Acme\DemoBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php">AcmeDemoExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Acme\DemoBundle\EventListener">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>3</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/EventListener/ControllerListener.php">ControllerListener</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Acme\DemoBundle\Twig\Extension</Package>
+        <Package>Symfony\Component\HttpKernel</Package>
+        <Package>Symfony\Component\HttpKernel\Event</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Acme\DemoBundle\Form">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Form/ContactType.php">ContactType</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Form</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Acme\DemoBundle\Controller</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Acme\DemoBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php">DemoControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Acme\DemoBundle\Twig\Extension">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>3</Ce>
+        <A>0</A>
+        <I>0.75</I>
+        <D>0.25</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Acme/DemoBundle/Twig/Extension/DemoExtension.php">DemoExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>CG\Core</Package>
+        <Package>Symfony\Bundle\TwigBundle\Loader</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Acme\DemoBundle\EventListener</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Helmelar\AdminBundle\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Controller/DefaultController.php">DefaultController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\AdminBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/DependencyInjection/Configuration.php">Configuration</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/DependencyInjection/HelmelarAdminExtension.php">HelmelarAdminExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\Config\Definition</Package>
+        <Package>Symfony\Component\Config\Definition\Builder</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\AdminBundle\Entity">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>6</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/Actor.php">Actor</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/Organisator.php">Organisator</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/Quest.php">Quest</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/QuestIdea.php">QuestIdea</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/Scenario.php">Scenario</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Entity/Task.php">Task</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\AdminBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/HelmelarAdminBundle.php">HelmelarAdminBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\AdminBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/AdminBundle/Tests/Controller/DefaultControllerTest.php">DefaultControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\GameBundle\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Controller/DefaultController.php">DefaultController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\GameBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/Configuration.php">Configuration</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/DependencyInjection/HelmelarGameExtension.php">HelmelarGameExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\Config\Definition</Package>
+        <Package>Symfony\Component\Config\Definition\Builder</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\GameBundle\Entity">
+      <Stats>
+        <TotalClasses>15</TotalClasses>
+        <ConcreteClasses>15</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Align.php">Align</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Behavior.php">Behavior</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Cult.php">Cult</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/God.php">God</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Knowledge.php">Knowledge</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/KnowledgeExt.php">KnowledgeExt</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Language.php">Language</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Object.php">Object</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/ObjectCat.php">ObjectCat</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/ObjectType.php">ObjectType</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Profession.php">Profession</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/ProfessionFamily.php">ProfessionFamily</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Race.php">Race</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Rune.php">Rune</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Entity/Spell.php">Spell</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\GameBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/HelmelarGameBundle.php">HelmelarGameBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\GameBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/GameBundle/Tests/Controller/DefaultControllerTest.php">DefaultControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\PlayerBundle\Controller">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Controller/CharactController.php">CharactController</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Controller/GuildController.php">GuildController</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Controller/PlayerController.php">PlayerController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Helmelar\PlayerBundle\Entity</Package>
+        <Package>Helmelar\PlayerBundle\Form</Package>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+        <Package>Symfony\Component\HttpFoundation</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\PlayerBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/DependencyInjection/Configuration.php">Configuration</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/DependencyInjection/HelmelarPlayerExtension.php">HelmelarPlayerExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\Config\Definition</Package>
+        <Package>Symfony\Component\Config\Definition\Builder</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\PlayerBundle\Entity">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Entity/Charact.php">Charact</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Entity/Guild.php">Guild</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Entity/Player.php">Player</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy>
+        <Package>Helmelar\PlayerBundle\Controller</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Helmelar\PlayerBundle\Form">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>2</Ce>
+        <A>0</A>
+        <I>0.66666666666667</I>
+        <D>0.33333333333333</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Form/CharactType.php">CharactType</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Form/GuildType.php">GuildType</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Form/PlayerType.php">PlayerType</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Form</Package>
+        <Package>Symfony\Component\OptionsResolver</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Helmelar\PlayerBundle\Controller</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Helmelar\PlayerBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/HelmelarPlayerBundle.php">HelmelarPlayerBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\PlayerBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Tests/Controller/CharactControllerTest.php">CharactControllerTest</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Tests/Controller/GuildControllerTest.php">GuildControllerTest</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/PlayerBundle/Tests/Controller/PlayerControllerTest.php">PlayerControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\SiteBundle\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Controller/DefaultController.php">DefaultController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\SiteBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/DependencyInjection/Configuration.php">Configuration</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/DependencyInjection/HelmelarSiteExtension.php">HelmelarSiteExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\Config\Definition</Package>
+        <Package>Symfony\Component\Config\Definition\Builder</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\SiteBundle\Entity">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>4</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Entity/Event.php">Event</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Entity/Faq.php">Faq</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Entity/News.php">News</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Entity/Pages.php">Pages</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\SiteBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/HelmelarSiteBundle.php">HelmelarSiteBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\SiteBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/SiteBundle/Tests/Controller/DefaultControllerTest.php">DefaultControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\UserBundle\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Controller/DefaultController.php">DefaultController</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Controller</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\UserBundle\DependencyInjection">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>6</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/DependencyInjection/Configuration.php">Configuration</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/DependencyInjection/HelmelarUserExtension.php">HelmelarUserExtension</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\Config</Package>
+        <Package>Symfony\Component\Config\Definition</Package>
+        <Package>Symfony\Component\Config\Definition\Builder</Package>
+        <Package>Symfony\Component\DependencyInjection</Package>
+        <Package>Symfony\Component\DependencyInjection\Loader</Package>
+        <Package>Symfony\Component\HttpKernel\DependencyInjection</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\UserBundle\Entity">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>4</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Entity/Contact.php">Contact</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Entity/Location.php">Location</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Entity/Log.php">Log</Class>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Entity/User.php">User</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\UserBundle">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/HelmelarUserBundle.php">HelmelarUserBundle</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Component\HttpKernel\Bundle</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Helmelar\UserBundle\Tests\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/master/workspace/helmelar4/src/Helmelar/UserBundle/Tests/Controller/DefaultControllerTest.php">DefaultControllerTest</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Symfony\Bundle\FrameworkBundle\Test</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles/>
+</PDepend>
